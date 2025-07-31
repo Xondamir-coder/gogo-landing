@@ -1,0 +1,25 @@
+// Fonts
+$font-base: 'OktaNeue', sans-serif;
+
+// Colors
+$primary-950: #001119;
+$primary-900: #002333;
+$primary-600: #018bcb;
+$primary-500: #01a7f4;
+$primary-50: #e6f7ff;
+$orange: #ff7a28;
+$border-color: #eaecf0;
+
+// Others
+$dt: 0.3s;
+$spacing-large: min(13vw, 188px);
+$spacing-medium: min(8vw, 120px);
+$spacing-small: max(5vw, 20px);
+
+// Breakpoints
+$bp-large-desktop: 1600px;
+$bp-desktop: 1470px;
+$bp-small-desktop: 1366px;
+$bp-ipad-pro: 1024px;
+$bp-large-mobile: 768px;
+$bp-small-mobile: 512px;
