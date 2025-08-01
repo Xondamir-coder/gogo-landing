@@ -2,11 +2,17 @@ import { defineConfig } from 'vite';
 import path from 'path';
 import autoprefixer from 'autoprefixer';
 import htmlMinifier from 'vite-plugin-html-minifier';
+import createSvgSpritePlugin from 'vite-plugin-svg-sprite';
 
 export default defineConfig(() => ({
 	plugins: [
 		htmlMinifier({
 			minify: true
+		}),
+		createSvgSpritePlugin({
+			symbolId: 'icon-[name]',
+			exportType: 'vanilla',
+			include: ['**/icons/*.svg']
 		})
 	],
 	resolve: {

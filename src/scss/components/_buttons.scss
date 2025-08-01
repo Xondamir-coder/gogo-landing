@@ -1,0 +1,25 @@
+@use '@abstracts/variables' as vars;
+
+%button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding-block: 14.5px;
+	padding-inline: max(3.15rem, 26px);
+	border-radius: 5.3rem;
+}
+
+.button {
+	&--blue {
+		@extend %button;
+		background-color: vars.$primary-500;
+		color: #fff;
+		stroke: #fff;
+	}
+	&--outlined {
+		@extend %button;
+		background-color: #fff;
+		border: 1px solid vars.$border-color;
+		stroke: vars.$primary-950;
+	}
+}

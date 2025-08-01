@@ -19,7 +19,50 @@
 		<link rel="stylesheet" href="src/scss/main.scss" />
 	</head>
 	<body>
-		<p>hello</p>
+		<div class="container">
+			<header class="header">
+				<a href="#" class="header__logo" onclick="location.reload(); return false;">
+					<svg viewBox="0 0 148 44">
+						<use href="#icon-logo"></use>
+					</svg>
+				</a>
+				<nav class="header__nav">
+					<a href="#home" class="header__link">Главная </a>
+					<a href="#home" class="header__link">О проекте </a>
+					<a href="#home" class="header__link">Возможности </a>
+					<a href="#home" class="header__link">Контакты </a>
+				</nav>
+				<button class="button--blue header__button">
+					<span>Скачать</span>
+					<svg class="icon-arrow" viewBox="0 0 24 24">
+						<use href="#icon-arrow"></use>
+					</svg>
+				</button>
+			</header>
+			<section class="hero">
+				<div class="hero__content">
+					<h1 class="hero__title">Город у тебя в кармане</h1>
+					<p>
+						События, выставки, концерты, рестораны, туры, достопримечательности — всё
+						собрано в одном приложении
+					</p>
+					<div class="hero__buttons">
+						<button class="button--blue">
+							<span>Скачать</span>
+							<svg class="icon-arrow" viewBox="0 0 24 24">
+								<use href="#icon-arrow"></use>
+							</svg>
+						</button>
+						<button class="button--outlined">
+							<span>Узнать больше</span>
+							<svg class="icon-arrow" viewBox="0 0 24 24">
+								<use href="#icon-arrow"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+		</div>
 		<script type="module" src="/src/main.js"></script>
 	</body>
 </html>

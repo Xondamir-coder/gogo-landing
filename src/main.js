@@ -1,1 +1,1 @@
-console.log('hello');
+import.meta.glob('./icons/*.svg', { eager: true });

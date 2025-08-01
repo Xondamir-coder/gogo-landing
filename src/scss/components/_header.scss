@@ -1,0 +1,23 @@
+@use '@abstracts/variables' as vars;
+
+.header {
+	margin-inline: max(8.4rem, 20px);
+	margin-top: max(2.4rem, 16px);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__nav {
+		display: flex;
+		gap: max(2.6rem, 10px);
+	}
+	&__link {
+		font-weight: 400;
+	}
+	&__logo {
+		width: max(14.8rem, 100px);
+	}
+	&__button {
+		align-self: stretch;
+	}
+}
