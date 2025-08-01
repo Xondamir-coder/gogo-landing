@@ -4,8 +4,12 @@
 @use 'utils/utils';
 @use 'utils/animations';
 
+@use 'components/typography';
+@use 'components/section-header';
 @use 'components/buttons';
 @use 'components/icons';
 @use 'components/header';
+
+@use 'abstracts/colors';
 
 @use 'index';

@@ -4,6 +4,7 @@ $font-base: 'OktaNeue', sans-serif;
 // Colors
 $primary-950: #001119;
 $primary-900: #002333;
+$primary-800: #004666;
 $primary-600: #018bcb;
 $primary-500: #01a7f4;
 $primary-50: #e6f7ff;
@@ -12,9 +13,7 @@ $border-color: #eaecf0;
 
 // Others
 $dt: 0.3s;
-$spacing-large: min(13vw, 188px);
-$spacing-medium: min(8vw, 120px);
-$spacing-small: max(5vw, 20px);
+$spacing: 18.8rem;
 
 // Breakpoints
 $bp-large-desktop: 1600px;

@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="src/scss/main.scss" />
 	</head>
 	<body>
-		<div class="container">
+		<div id="app">
 			<header class="header">
 				<a href="#" class="header__logo" onclick="location.reload(); return false;">
 					<svg viewBox="0 0 148 44">
@@ -39,29 +39,199 @@
 					</svg>
 				</button>
 			</header>
-			<section class="hero">
-				<div class="hero__content">
-					<h1 class="hero__title">Город у тебя в кармане</h1>
-					<p>
-						События, выставки, концерты, рестораны, туры, достопримечательности — всё
-						собрано в одном приложении
-					</p>
-					<div class="hero__buttons">
-						<button class="button--blue">
-							<span>Скачать</span>
-							<svg class="icon-arrow" viewBox="0 0 24 24">
-								<use href="#icon-arrow"></use>
-							</svg>
-						</button>
-						<button class="button--outlined">
-							<span>Узнать больше</span>
-							<svg class="icon-arrow" viewBox="0 0 24 24">
-								<use href="#icon-arrow"></use>
-							</svg>
-						</button>
+			<main class="container">
+				<section class="hero">
+					<img
+						src="src/images/hero.png"
+						alt="hero banner"
+						class="hero__image"
+						width="1440"
+						height="1239" />
+					<div class="hero__content">
+						<h1 class="heading-1">Город у тебя в кармане</h1>
+						<p>
+							События, выставки, концерты, рестораны, туры, достопримечательности —
+							всё собрано в одном приложении
+						</p>
+						<div class="hero__buttons">
+							<button class="button--outlined">
+								<span>Узнать больше</span>
+								<svg class="icon-arrow" viewBox="0 0 24 24">
+									<use href="#icon-arrow"></use>
+								</svg>
+							</button>
+							<button class="button--blue">
+								<span>Скачать</span>
+								<svg class="icon-arrow" viewBox="0 0 24 24">
+									<use href="#icon-arrow"></use>
+								</svg>
+							</button>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+				<section class="essentials">
+					<div class="section-header">
+						<h2 class="heading-2">Всё в одном месте</h2>
+						<p>
+							Больше не нужно искать в десятках сайтов. В нашем приложении <br />
+							все ты найдешь
+						</p>
+					</div>
+					<ul class="essentials__list">
+						<li class="essentials__item">
+							<div class="essentials__item-box icon-container">
+								<svg viewBox="0 0 32 32" class="essentials__item-icon">
+									<use href="#icon-chart"></use>
+								</svg>
+							</div>
+							<div class="essentials__item-content">
+								<h4 class="heading-4">Город, который живёт</h4>
+								<p class="body-14">
+									Будь в центре городской жизни от масштабных концертов
+								</p>
+							</div>
+						</li>
+						<li class="essentials__item">
+							<div class="essentials__item-box icon-container">
+								<svg viewBox="0 0 32 32" class="essentials__item-icon">
+									<use href="#icon-data-tree"></use>
+								</svg>
+							</div>
+							<div class="essentials__item-content">
+								<h4 class="heading-4">Твой карманный ассистент</h4>
+								<p class="body-14">
+									Планируй, бронируй и открывай город без лишних усилий
+								</p>
+							</div>
+						</li>
+						<li class="essentials__item">
+							<div class="essentials__item-box icon-container">
+								<svg viewBox="0 0 32 32" class="essentials__item-icon">
+									<use href="#icon-speedometer"></use>
+								</svg>
+							</div>
+							<div class="essentials__item-content">
+								<h4 class="heading-4">Удобно и быстро</h4>
+								<p class="body-14">
+									Не трать время на поиск — просто открой приложение.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="facilities">
+					<div class="section-header">
+						<h2 class="heading-2">
+							Единое приложение для <br />
+							досуга, отдыха и путешествий
+						</h2>
+						<p>
+							Хочешь знать, что происходит в городе? Мы собрали все <br />
+							события, заведения и интересные места
+						</p>
+					</div>
+					<ul class="facilities__list">
+						<li class="facilities__item">
+							<img
+								src="src/images/facilities-1.png"
+								alt="1st banner"
+								class="facilities__item-image" />
+							<div class="facilities__item-content">
+								<span class="facilities__item-label"> Календарь событий </span>
+								<h3 class="heading-3">Смотри, что происходит онлайн</h3>
+								<p>
+									Будь в курсе всех событий: концерты, выставки, спектакли,
+									фестивали
+								</p>
+							</div>
+						</li>
+						<li class="facilities__item">
+							<img
+								src="src/images/facilities-2.png"
+								alt="1st banner"
+								class="facilities__item-image" />
+							<div class="facilities__item-content">
+								<span class="facilities__item-label"> Ресторан / Отель </span>
+								<h3 class="heading-3">Ищи, где поесть и отдохнуть прямо сейчас</h3>
+								<p>
+									Открывай новые рестораны, бронируй отели, читай отзывы и смотри
+									фото.
+								</p>
+							</div>
+						</li>
+						<li class="facilities__item">
+							<img
+								src="src/images/facilities-3.png"
+								alt="1st banner"
+								class="facilities__item-image" />
+							<div class="facilities__item-content">
+								<span class="facilities__item-label"> Календарь событий </span>
+								<h3 class="heading-3">Планируй свой маршрут вместе с нами</h3>
+								<p>
+									Проложи удобный маршрут по городу, найди достопримечательности
+								</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="events">
+					<div class="section-header">
+						<h2 class="heading-2 clr-primary-950">
+							Полный доступ к городским <br />
+							событиям и местам
+						</h2>
+						<p>
+							Мы продумали всё до мелочей: от простого поиска до быстрой <br />
+							покупки билетов. Листай афишу, открывай карту, выбирай места
+						</p>
+					</div>
+					<div class="events__container">
+						<img
+							src="src/images/events-banner.jpg"
+							alt="events banner"
+							class="events__image" />
+						<div class="events__content">
+							<div class="events__content-header section-header">
+								<h3 class="heading-3">
+									Следи за городом <br />
+									в реальном времени
+								</h3>
+								<p>
+									Смотри афишу событий, ищи интересные места, планируй день и
+									покупай билеты — всё прямо в приложении. Удобно, быстро и без
+									лишних переходов.
+								</p>
+							</div>
+							<ul class="events__list">
+								<li class="events__item">
+									<div class="events__item-box icon-container">
+										<svg viewBox="0 0 28 28" class="events__item-icon">
+											<use href="#icon-code"></use>
+										</svg>
+									</div>
+									<h5 class="heading-5">Актуальная афиша</h5>
+									<p class="body-14">
+										Концерты, выставки, фестивали — узнавай первым, что
+										происходит в городе.
+									</p>
+								</li>
+								<li class="events__item">
+									<div class="events__item-box icon-container">
+										<svg viewBox="0 0 28 28" class="events__item-icon">
+											<use href="#icon-code"></use>
+										</svg>
+									</div>
+									<h5 class="heading-5">Места рядом с тобой</h5>
+									<p class="body-14">
+										Рестораны, кофейни, музеи и достопримечательности — всё, что
+										стоит посетить.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</main>
 		</div>
 		<script type="module" src="/src/main.js"></script>
 	</body>
