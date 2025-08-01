@@ -1,8 +1,14 @@
 import { defineConfig } from 'vite';
 import path from 'path';
 import autoprefixer from 'autoprefixer';
+import htmlMinifier from 'vite-plugin-html-minifier';
 
 export default defineConfig(() => ({
+	plugins: [
+		htmlMinifier({
+			minify: true
+		})
+	],
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, 'src'),
