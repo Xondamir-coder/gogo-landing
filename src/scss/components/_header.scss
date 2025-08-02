@@ -15,7 +15,17 @@
 	&__link {
 		position: relative;
 		display: block;
-
+		@for $i from 1 through 5 {
+			&:nth-child(#{$i}) {
+				animation: 0.5s backwards;
+				animation-delay: 0.1s * ($i - 1) + 0.15s;
+				@if ($i % 2 == 0) {
+					animation-name: slide-from-top-10;
+				} @else {
+					animation-name: slide-from-bottom-10;
+				}
+			}
+		}
 		&::before,
 		&::after {
 			content: '';
@@ -95,7 +105,7 @@
 	&__logo {
 		width: max(14.8rem, 100px);
 		border-radius: 1rem;
-
+		animation: slide-from-left-20 0.5s;
 		&:hover {
 			transform: translateY(-5px);
 			background-color: rgba(vars.$primary-500, 0.06);
@@ -103,5 +113,6 @@
 	}
 	&__button {
 		align-self: stretch;
+		animation: slide-from-right-20 0.5s backwards 0.35s;
 	}
 }
