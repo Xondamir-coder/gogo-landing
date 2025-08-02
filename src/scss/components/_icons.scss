@@ -1,6 +1,9 @@
 @use '@abstracts/mixins' as mix;
 @use '@abstracts/variables' as vars;
 
+.icon-star {
+	width: max(2.4rem, 20px);
+}
 .icon-arrow {
 	width: max(2.4rem, 20px);
 }

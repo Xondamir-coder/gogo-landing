@@ -120,15 +120,45 @@
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 }
+.mockup-container {
+	position: relative;
+	border-radius: 2.5rem;
+	width: 100%;
+	background-color: #fbfbfb;
+	& > * {
+		position: absolute;
+	}
+}
+.mockup-image {
+	width: 75%;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
 .events {
 	display: flex;
 	flex-direction: column;
-	gap: 8rem;
+	gap: 10rem;
 	margin-inline: vars.$spacing;
+	&__card {
+		z-index: 2;
+		width: 63%;
+		filter: drop-shadow(28px 61px 100px #16112e33);
+
+		&:first-child {
+			left: 0;
+			top: 10%;
+			left: -10%;
+		}
+		&:nth-child(2) {
+			right: -10%;
+			bottom: -10%;
+		}
+	}
 	&__container {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 14rem;
+		grid-template-columns: 1fr 1.09fr;
+		gap: 12rem;
 	}
 	&__content {
 		display: flex;
@@ -157,6 +187,112 @@
 		}
 		&-icon {
 			width: 2.8rem;
+		}
+	}
+}
+.book {
+	margin-inline: vars.$spacing;
+	display: grid;
+	grid-template-columns: 1.33fr 1fr;
+	gap: 4.2rem;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+		align-self: center;
+	}
+	&__calendar {
+		width: 65%;
+		right: -16.7%;
+		bottom: 9%;
+		filter: drop-shadow(-28px 61px 100px #16112e33);
+	}
+	& > *:last-child {
+		aspect-ratio: 436/400;
+	}
+}
+.reviews {
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+	h2 {
+		align-self: center;
+	}
+	&__list {
+		display: flex;
+		gap: 2rem;
+		@include mix.flex-scroll;
+	}
+	&__item {
+		background-color: vars.$primary-50;
+		border-radius: 2rem;
+		padding: 3rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-width: 400px;
+		aspect-ratio: 400/378;
+
+		&-top {
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+		}
+		&-feedback {
+			display: flex;
+			gap: 1rem;
+		}
+		&-stars {
+			display: flex;
+			gap: max(0.2rem, 2px);
+		}
+		&-rating {
+			font-size: max(1.8rem, 16px);
+			color: vars.$primary-900;
+			font-weight: 500;
+		}
+		&-bottom {
+			display: flex;
+			gap: 1.2rem;
+		}
+		&-pfp {
+			width: 5.8rem;
+			height: 5.8rem;
+			border-radius: 50%;
+		}
+		&-info {
+			align-self: center;
+			display: flex;
+			flex-direction: column;
+			// justify-content: space-between;
+			gap: max(0.6rem, 5px);
+		}
+		&-quotes {
+			align-self: center;
+			width: 4rem;
+			margin-left: auto;
+		}
+	}
+}
+.cta {
+	background-image: url('../images/gradient.jpg');
+	background-size: cover;
+	background-position: center;
+	padding-inline: vars.$spacing;
+	margin-inline: vars.$spacing;
+	border-radius: 3rem;
+	aspect-ratio: 1063/451;
+	@include mix.flex-center;
+
+	&__content {
+		margin-top: 5%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 1.2rem;
+		button {
+			margin-top: 3.3rem;
 		}
 	}
 }

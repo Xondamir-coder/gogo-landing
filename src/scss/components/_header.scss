@@ -12,6 +12,9 @@
 	}
 	&__link {
 		font-weight: 400;
+		&:hover {
+			color: vars.$primary-600;
+		}
 	}
 	&__logo {
 		width: max(14.8rem, 100px);
