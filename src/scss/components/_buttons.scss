@@ -1,34 +1,109 @@
 @use '@abstracts/variables' as vars;
 
+@keyframes shimmer {
+	100% {
+		transform: translateX(100%);
+	}
+}
+
 %button {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
 	padding-block: 14px;
 	padding-inline: max(3.15rem, 26px);
-	border-radius: 5.3rem;
+	position: relative;
+
+	&:hover {
+		svg {
+			transform: translateX(1rem);
+		}
+		.button__bg {
+			transform: scale3d(1.2, 1.2, 1);
+			&::before {
+				transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+				transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+			}
+			&::after {
+				opacity: 1;
+				transition-duration: 0.01s;
+				transition-delay: 0.3s;
+			}
+		}
+	}
+
 	span {
-		margin-bottom: 3%;
+		margin-bottom: 4%;
+		z-index: 2;
+	}
+	svg {
+		z-index: 2;
 	}
 }
 
 .button {
+	&__bg {
+		top: 0;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 5.3rem;
+		overflow: hidden;
+		transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1),
+			border-color 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			background: vars.$primary-950;
+		}
+		&::before {
+			width: 110%;
+			height: 0;
+			padding-bottom: 110%;
+			top: 50%;
+			left: 50%;
+			border-radius: 50%;
+			transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1);
+		}
+		&::after {
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+	}
 	&--blue {
 		@extend %button;
-		background-color: vars.$primary-500;
 		color: #fff;
 		stroke: #fff;
-		&:hover {
-			background-color: vars.$primary-900;
+
+		.button__bg {
+			background-color: vars.$primary-500;
 		}
 	}
 	&--outlined {
 		@extend %button;
-		background-color: #fff;
-		border: 1px solid vars.$border-color;
+		border-radius: 5.3rem;
 		stroke: vars.$primary-950;
 		&:hover {
-			background-color: vars.$border-color;
+			color: #fff;
+			stroke: #fff;
+			.button__bg {
+				border-color: vars.$primary-800;
+				transform: scale3d(1.15, 1.15, 1);
+			}
+		}
+		.button__bg {
+			border: 1px solid vars.$border-color;
+			background-color: #fff;
+			&::before,
+			&::after {
+				background-color: vars.$primary-800;
+			}
 		}
 	}
 }
