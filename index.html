@@ -43,22 +43,41 @@
 			<main class="container">
 				<section class="hero">
 					<picture class="hero__image">
-						<!-- For screens 1440px and up -->
-						<source srcset="src/images/hero-1440.jpg" media="(min-width: 1025px)" />
+						<!-- AVIF sources -->
+						<source
+							srcset="src/images/resized/hero-1920.avif"
+							type="image/avif"
+							media="(min-width: 1025px)" />
+						<source
+							srcset="src/images/resized/hero-1024.avif"
+							type="image/avif"
+							media="(min-width: 513px)" />
+						<source
+							srcset="src/images/resized/hero-512.avif"
+							type="image/avif"
+							media="(max-width: 512px)" />
 
-						<!-- For screens between 513px and 1024px -->
-						<source srcset="src/images/hero-1024.jpg" media="(min-width: 513px)" />
+						<!-- Optional WebP sources -->
+						<source
+							srcset="src/images/resized/hero-1920.webp"
+							type="image/webp"
+							media="(min-width: 1025px)" />
+						<source
+							srcset="src/images/resized/hero-1024.webp"
+							type="image/webp"
+							media="(min-width: 513px)" />
+						<source
+							srcset="src/images/resized/hero-512.webp"
+							type="image/webp"
+							media="(max-width: 512px)" />
 
-						<!-- For screens up to 512px -->
-						<source srcset="src/images/hero-512.jpg" media="(max-width: 512px)" />
-
-						<!-- Fallback image if <source> is not supported -->
+						<!-- Fallback JPG (only 1920) -->
 						<img
-							src="src/images/hero-1440.jpg"
-							alt="hero banner"
-							width="1440"
-							height="1239" />
+							src="src/images/resized/hero-1920.jpg"
+							alt="Hero banner"
+							width="1920" />
 					</picture>
+
 					<div class="hero__content">
 						<h1 class="heading-1">Город у тебя в кармане</h1>
 						<p>
@@ -146,10 +165,40 @@
 					</div>
 					<ul class="facilities__list">
 						<li class="facilities__item">
-							<img
-								src="src/images/facilities-1.png"
-								alt="1st banner"
-								class="facilities__item-image" />
+							<picture class="facilities__item-image">
+								<!-- AVIF sources -->
+								<source
+									srcset="src/images/resized/facilities-1-1920.avif"
+									type="image/avif"
+									media="(min-width: 1025px)" />
+								<source
+									srcset="src/images/resized/facilities-1-1024.avif"
+									type="image/avif"
+									media="(min-width: 513px)" />
+								<source
+									srcset="src/images/resized/facilities-1-512.avif"
+									type="image/avif"
+									media="(max-width: 512px)" />
+
+								<!-- WebP sources -->
+								<source
+									srcset="src/images/resized/facilities-1-1920.webp"
+									type="image/webp"
+									media="(min-width: 1025px)" />
+								<source
+									srcset="src/images/resized/facilities-1-1024.webp"
+									type="image/webp"
+									media="(min-width: 513px)" />
+								<source
+									srcset="src/images/resized/facilities-1-512.webp"
+									type="image/webp"
+									media="(max-width: 512px)" />
+
+								<!-- JPEG fallback -->
+								<img
+									src="src/images/resized/facilities-1-1920.jpg"
+									alt="1st banner" />
+							</picture>
 							<div class="facilities__item-content">
 								<span class="facilities__item-label"> Календарь событий </span>
 								<h3 class="heading-3">Смотри, что происходит онлайн</h3>
@@ -160,10 +209,40 @@
 							</div>
 						</li>
 						<li class="facilities__item">
-							<img
-								src="src/images/facilities-2.png"
-								alt="1st banner"
-								class="facilities__item-image" />
+							<picture class="facilities__item-image">
+								<!-- AVIF sources -->
+								<source
+									srcset="src/images/resized/facilities-2-1920.avif"
+									type="image/avif"
+									media="(min-width: 1025px)" />
+								<source
+									srcset="src/images/resized/facilities-2-1024.avif"
+									type="image/avif"
+									media="(min-width: 513px)" />
+								<source
+									srcset="src/images/resized/facilities-2-512.avif"
+									type="image/avif"
+									media="(max-width: 512px)" />
+
+								<!-- WebP sources -->
+								<source
+									srcset="src/images/resized/facilities-2-1920.webp"
+									type="image/webp"
+									media="(min-width: 1025px)" />
+								<source
+									srcset="src/images/resized/facilities-2-1024.webp"
+									type="image/webp"
+									media="(min-width: 513px)" />
+								<source
+									srcset="src/images/resized/facilities-2-512.webp"
+									type="image/webp"
+									media="(max-width: 512px)" />
+
+								<!-- JPEG fallback -->
+								<img
+									src="src/images/resized/facilities-2-1920.jpg"
+									alt="1st banner" />
+							</picture>
 							<div class="facilities__item-content">
 								<span class="facilities__item-label"> Ресторан / Отель </span>
 								<h3 class="heading-3">Ищи, где поесть и отдохнуть прямо сейчас</h3>
@@ -174,10 +253,40 @@
 							</div>
 						</li>
 						<li class="facilities__item">
-							<img
-								src="src/images/facilities-3.png"
-								alt="1st banner"
-								class="facilities__item-image" />
+							<picture class="facilities__item-image">
+								<!-- AVIF sources -->
+								<source
+									srcset="src/images/resized/facilities-3-1920.avif"
+									type="image/avif"
+									media="(min-width: 1025px)" />
+								<source
+									srcset="src/images/resized/facilities-3-1024.avif"
+									type="image/avif"
+									media="(min-width: 513px)" />
+								<source
+									srcset="src/images/resized/facilities-3-512.avif"
+									type="image/avif"
+									media="(max-width: 512px)" />
+
+								<!-- WebP sources -->
+								<source
+									srcset="src/images/resized/facilities-3-1920.webp"
+									type="image/webp"
+									media="(min-width: 1025px)" />
+								<source
+									srcset="src/images/resized/facilities-3-1024.webp"
+									type="image/webp"
+									media="(min-width: 513px)" />
+								<source
+									srcset="src/images/resized/facilities-3-512.webp"
+									type="image/webp"
+									media="(max-width: 512px)" />
+
+								<!-- JPEG fallback -->
+								<img
+									src="src/images/resized/facilities-3-1920.jpg"
+									alt="1st banner" />
+							</picture>
 							<div class="facilities__item-content">
 								<span class="facilities__item-label"> Календарь событий </span>
 								<h3 class="heading-3">Планируй свой маршрут вместе с нами</h3>
@@ -201,15 +310,104 @@
 					</div>
 					<div class="events__container">
 						<div class="mockup-container">
-							<img
-								src="src/images/events-card-1.png"
-								alt="card 1"
-								class="events__card" />
-							<img
-								src="src/images/events-card-2.png"
-								alt="card 2"
-								class="events__card" />
-							<img src="src/images/mockup.png" alt="mockup" class="mockup-image" />
+							<picture class="events__card">
+								<!-- AVIF sources -->
+								<source
+									srcset="src/images/resized/events-card-1-1920.avif"
+									type="image/avif"
+									media="(min-width: 1025px)" />
+								<source
+									srcset="src/images/resized/events-card-1-1024.avif"
+									type="image/avif"
+									media="(min-width: 513px)" />
+								<source
+									srcset="src/images/resized/events-card-1-512.avif"
+									type="image/avif"
+									media="(max-width: 512px)" />
+
+								<!-- WebP sources -->
+								<source
+									srcset="src/images/resized/events-card-1-1920.webp"
+									type="image/webp"
+									media="(min-width: 1025px)" />
+								<source
+									srcset="src/images/resized/events-card-1-1024.webp"
+									type="image/webp"
+									media="(min-width: 513px)" />
+								<source
+									srcset="src/images/resized/events-card-1-512.webp"
+									type="image/webp"
+									media="(max-width: 512px)" />
+
+								<!-- PNG fallback -->
+								<img src="src/images/resized/events-card-1-1920.png" alt="card 1" />
+							</picture>
+
+							<picture class="events__card">
+								<!-- AVIF sources -->
+								<source
+									srcset="src/images/resized/events-card-2-1920.avif"
+									type="image/avif"
+									media="(min-width: 1025px)" />
+								<source
+									srcset="src/images/resized/events-card-2-1024.avif"
+									type="image/avif"
+									media="(min-width: 513px)" />
+								<source
+									srcset="src/images/resized/events-card-2-512.avif"
+									type="image/avif"
+									media="(max-width: 512px)" />
+
+								<!-- WebP sources -->
+								<source
+									srcset="src/images/resized/events-card-2-1920.webp"
+									type="image/webp"
+									media="(min-width: 1025px)" />
+								<source
+									srcset="src/images/resized/events-card-2-1024.webp"
+									type="image/webp"
+									media="(min-width: 513px)" />
+								<source
+									srcset="src/images/resized/events-card-2-512.webp"
+									type="image/webp"
+									media="(max-width: 512px)" />
+
+								<!-- PNG fallback -->
+								<img src="src/images/resized/events-card-2-1920.png" alt="card 2" />
+							</picture>
+
+							<picture class="mockup-image">
+								<!-- AVIF sources -->
+								<source
+									srcset="src/images/resized/mockup-1920.avif"
+									type="image/avif"
+									media="(min-width: 1025px)" />
+								<source
+									srcset="src/images/resized/mockup-1024.avif"
+									type="image/avif"
+									media="(min-width: 513px)" />
+								<source
+									srcset="src/images/resized/mockup-512.avif"
+									type="image/avif"
+									media="(max-width: 512px)" />
+
+								<!-- WebP sources -->
+								<source
+									srcset="src/images/resized/mockup-1920.webp"
+									type="image/webp"
+									media="(min-width: 1025px)" />
+								<source
+									srcset="src/images/resized/mockup-1024.webp"
+									type="image/webp"
+									media="(min-width: 513px)" />
+								<source
+									srcset="src/images/resized/mockup-512.webp"
+									type="image/webp"
+									media="(max-width: 512px)" />
+
+								<!-- PNG fallback -->
+								<img src="src/images/resized/mockup-1920.png" alt="mockup" />
+							</picture>
 						</div>
 						<div class="events__content">
 							<div class="events__content-header section-header">
@@ -261,11 +459,74 @@
 						</p>
 					</div>
 					<div class="mockup-container">
-						<img src="src/images/book-mockup.png" alt="mockup" class="mockup-image" />
-						<img src="src/images/calendar.png" alt="calendar" class="book__calendar" />
+						<picture class="mockup-image">
+							<!-- AVIF sources -->
+							<source
+								srcset="src/images/resized/book-mockup-1920.avif"
+								type="image/avif"
+								media="(min-width: 1025px)" />
+							<source
+								srcset="src/images/resized/book-mockup-1024.avif"
+								type="image/avif"
+								media="(min-width: 513px)" />
+							<source
+								srcset="src/images/resized/book-mockup-512.avif"
+								type="image/avif"
+								media="(max-width: 512px)" />
+
+							<!-- WebP sources -->
+							<source
+								srcset="src/images/resized/book-mockup-1920.webp"
+								type="image/webp"
+								media="(min-width: 1025px)" />
+							<source
+								srcset="src/images/resized/book-mockup-1024.webp"
+								type="image/webp"
+								media="(min-width: 513px)" />
+							<source
+								srcset="src/images/resized/book-mockup-512.webp"
+								type="image/webp"
+								media="(max-width: 512px)" />
+
+							<!-- PNG fallback -->
+							<img src="src/images/resized/book-mockup-1920.png" alt="mockup" />
+						</picture>
+
+						<picture class="book__calendar">
+							<!-- AVIF sources -->
+							<source
+								srcset="src/images/resized/calendar-1920.avif"
+								type="image/avif"
+								media="(min-width: 1025px)" />
+							<source
+								srcset="src/images/resized/calendar-1024.avif"
+								type="image/avif"
+								media="(min-width: 513px)" />
+							<source
+								srcset="src/images/resized/calendar-512.avif"
+								type="image/avif"
+								media="(max-width: 512px)" />
+
+							<!-- WebP sources -->
+							<source
+								srcset="src/images/resized/calendar-1920.webp"
+								type="image/webp"
+								media="(min-width: 1025px)" />
+							<source
+								srcset="src/images/resized/calendar-1024.webp"
+								type="image/webp"
+								media="(min-width: 513px)" />
+							<source
+								srcset="src/images/resized/calendar-512.webp"
+								type="image/webp"
+								media="(max-width: 512px)" />
+
+							<!-- PNG fallback -->
+							<img src="src/images/resized/calendar-1920.png" alt="calendar" />
+						</picture>
 					</div>
 				</section>
-				<!-- <section class="reviews">
+				<section class="reviews">
 					<h2 class="heading-2 clr-primary-950">Что говорят пользователи</h2>
 					<ul class="reviews__list">
 						<li class="reviews__item">
@@ -297,10 +558,39 @@
 								</div>
 							</div>
 							<div class="reviews__item-bottom">
-								<img
-									src="src/images/user-0.png"
-									alt="user"
-									class="reviews__item-pfp" />
+								<picture class="reviews__item-pfp">
+									<!-- AVIF sources -->
+									<source
+										srcset="src/images/resized/user-0-1920.avif"
+										type="image/avif"
+										media="(min-width: 1025px)" />
+									<source
+										srcset="src/images/resized/user-0-1024.avif"
+										type="image/avif"
+										media="(min-width: 513px)" />
+									<source
+										srcset="src/images/resized/user-0-512.avif"
+										type="image/avif"
+										media="(max-width: 512px)" />
+
+									<!-- WebP sources -->
+									<source
+										srcset="src/images/resized/user-0-1920.webp"
+										type="image/webp"
+										media="(min-width: 1025px)" />
+									<source
+										srcset="src/images/resized/user-0-1024.webp"
+										type="image/webp"
+										media="(min-width: 513px)" />
+									<source
+										srcset="src/images/resized/user-0-512.webp"
+										type="image/webp"
+										media="(max-width: 512px)" />
+
+									<!-- PNG fallback -->
+									<img src="src/images/resized/user-0-1920.png" alt="user" />
+								</picture>
+
 								<div class="reviews__item-info">
 									<h5 class="heading-5 clr-primary-900">Dilshod</h5>
 									<p>Tashkent</p>
@@ -339,10 +629,38 @@
 								</div>
 							</div>
 							<div class="reviews__item-bottom">
-								<img
-									src="src/images/user-1.png"
-									alt="user"
-									class="reviews__item-pfp" />
+								<picture class="reviews__item-pfp">
+									<!-- AVIF sources -->
+									<source
+										srcset="src/images/resized/user-1-1920.avif"
+										type="image/avif"
+										media="(min-width: 1025px)" />
+									<source
+										srcset="src/images/resized/user-1-1024.avif"
+										type="image/avif"
+										media="(min-width: 513px)" />
+									<source
+										srcset="src/images/resized/user-1-512.avif"
+										type="image/avif"
+										media="(max-width: 512px)" />
+
+									<!-- WebP sources -->
+									<source
+										srcset="src/images/resized/user-1-1920.webp"
+										type="image/webp"
+										media="(min-width: 1025px)" />
+									<source
+										srcset="src/images/resized/user-1-1024.webp"
+										type="image/webp"
+										media="(min-width: 513px)" />
+									<source
+										srcset="src/images/resized/user-1-512.webp"
+										type="image/webp"
+										media="(max-width: 512px)" />
+
+									<!-- PNG fallback -->
+									<img src="src/images/resized/user-1-1920.png" alt="user" />
+								</picture>
 								<div class="reviews__item-info">
 									<h5 class="heading-5 clr-primary-900">Анна</h5>
 									<p>Москва</p>
@@ -381,10 +699,38 @@
 								</div>
 							</div>
 							<div class="reviews__item-bottom">
-								<img
-									src="src/images/user-3.png"
-									alt="user"
-									class="reviews__item-pfp" />
+								<picture class="reviews__item-pfp">
+									<!-- AVIF sources -->
+									<source
+										srcset="src/images/resized/user-2-1920.avif"
+										type="image/avif"
+										media="(min-width: 1025px)" />
+									<source
+										srcset="src/images/resized/user-2-1024.avif"
+										type="image/avif"
+										media="(min-width: 513px)" />
+									<source
+										srcset="src/images/resized/user-2-512.avif"
+										type="image/avif"
+										media="(max-width: 512px)" />
+
+									<!-- WebP sources -->
+									<source
+										srcset="src/images/resized/user-2-1920.webp"
+										type="image/webp"
+										media="(min-width: 1025px)" />
+									<source
+										srcset="src/images/resized/user-2-1024.webp"
+										type="image/webp"
+										media="(min-width: 513px)" />
+									<source
+										srcset="src/images/resized/user-2-512.webp"
+										type="image/webp"
+										media="(max-width: 512px)" />
+
+									<!-- PNG fallback -->
+									<img src="src/images/resized/user-2-1920.png" alt="user" />
+								</picture>
 								<div class="reviews__item-info">
 									<h5 class="heading-5 clr-primary-900">Айгерим</h5>
 									<p>Алматы</p>
@@ -423,10 +769,38 @@
 								</div>
 							</div>
 							<div class="reviews__item-bottom">
-								<img
-									src="src/images/user-3.png"
-									alt="user"
-									class="reviews__item-pfp" />
+								<picture class="reviews__item-pfp">
+									<!-- AVIF sources -->
+									<source
+										srcset="src/images/resized/user-3-1920.avif"
+										type="image/avif"
+										media="(min-width: 1025px)" />
+									<source
+										srcset="src/images/resized/user-3-1024.avif"
+										type="image/avif"
+										media="(min-width: 513px)" />
+									<source
+										srcset="src/images/resized/user-3-512.avif"
+										type="image/avif"
+										media="(max-width: 512px)" />
+
+									<!-- WebP sources -->
+									<source
+										srcset="src/images/resized/user-3-1920.webp"
+										type="image/webp"
+										media="(min-width: 1025px)" />
+									<source
+										srcset="src/images/resized/user-3-1024.webp"
+										type="image/webp"
+										media="(min-width: 513px)" />
+									<source
+										srcset="src/images/resized/user-3-512.webp"
+										type="image/webp"
+										media="(max-width: 512px)" />
+
+									<!-- PNG fallback -->
+									<img src="src/images/resized/user-3-1920.png" alt="user" />
+								</picture>
 								<div class="reviews__item-info">
 									<h5 class="heading-5 clr-primary-900">Lukas</h5>
 									<p>Берлин</p>
@@ -437,8 +811,40 @@
 							</div>
 						</li>
 					</ul>
-				</section> -->
+				</section>
 				<section class="cta">
+					<picture class="cta__image">
+						<!-- AVIF sources -->
+						<source
+							srcset="src/images/resized/gradient-1920.avif"
+							type="image/avif"
+							media="(min-width: 1025px)" />
+						<source
+							srcset="src/images/resized/gradient-1024.avif"
+							type="image/avif"
+							media="(min-width: 513px)" />
+						<source
+							srcset="src/images/resized/gradient-512.avif"
+							type="image/avif"
+							media="(max-width: 512px)" />
+
+						<!-- WebP sources -->
+						<source
+							srcset="src/images/resized/gradient-1920.webp"
+							type="image/webp"
+							media="(min-width: 1025px)" />
+						<source
+							srcset="src/images/resized/gradient-1024.webp"
+							type="image/webp"
+							media="(min-width: 513px)" />
+						<source
+							srcset="src/images/resized/gradient-512.webp"
+							type="image/webp"
+							media="(max-width: 512px)" />
+
+						<!-- JPG fallback -->
+						<img src="src/images/resized/gradient-1920.jpg" alt="gradient" />
+					</picture>
 					<div class="cta__content">
 						<h2 class="heading-2 clr-primary-950">
 							Твое приключение в городе начинается с одного клика

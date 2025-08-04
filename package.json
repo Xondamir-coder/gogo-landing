@@ -4,12 +4,14 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
+		"images": "node src/js/process-images.js",
+		"dev": "npm run images && vite",
+		"build": "npm run images && vite build",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
 		"sass-embedded": "^1.89.2",
+		"sharp": "^0.34.3",
 		"terser": "^5.43.1",
 		"vite": "^7.0.4",
 		"vite-plugin-html-minifier": "^1.0.5",
