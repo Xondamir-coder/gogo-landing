@@ -1,6 +1,10 @@
 @use '@abstracts/variables' as vars;
 @use '@abstracts/mixins' as mix;
 
+#app {
+	padding-bottom: max(4rem, 20px);
+	overflow: hidden;
+}
 .container {
 	display: flex;
 	flex-direction: column;
@@ -15,6 +19,7 @@
 	background-color: #f9f9f9;
 	@media screen and (max-width: vars.$bp-small-mobile) {
 		aspect-ratio: 375/812;
+		overflow: hidden;
 	}
 	&__image {
 		z-index: 1;
@@ -23,6 +28,13 @@
 		height: 100%;
 		inset: 0;
 		animation: scale-appear-95 1s 0.55s backwards;
+		@media screen and (max-width: vars.$bp-small-mobile) {
+			top: 50%;
+			left: 50%;
+			translate: -50% -50%;
+			min-width: 750px;
+			aspect-ratio: 750/563;
+		}
 	}
 	&__content {
 		z-index: 1;
@@ -65,75 +77,81 @@
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		gap: 2.2rem;
+		gap: max(2.2rem, 22px);
+		@media screen and (max-width: vars.$bp-ipad-pro) {
+			@include mix.grid-scroll(312px);
+		}
 	}
 	&__item {
-		border-radius: 2rem;
+		border-radius: max(2rem, 20px);
 		border: 1px solid vars.$border-color;
-		padding-inline: 3rem;
-		padding-block: 5.7rem;
+		padding-inline: max(3rem, 16px);
+		padding-block: max(5.7rem, 44px);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		gap: 2.4rem;
+		gap: max(2.4rem, 24px);
 		&-box {
-			width: 7.2rem;
-			height: 7.2rem;
+			width: max(7.2rem, 72px);
+			height: max(7.2rem, 72px);
 		}
 		&-content {
 			display: flex;
 			flex-direction: column;
-			gap: 1rem;
+			gap: max(1rem, 10px);
 		}
 		&-icon {
-			width: 3.2rem;
+			width: max(3.2rem, 32px);
 		}
 	}
 }
 .facilities {
 	display: flex;
 	flex-direction: column;
-	gap: 6rem;
+	gap: max(6rem, 16px);
 	@include mix.spacing(margin, 'small');
 	&__item {
 		background-color: vars.$primary-50;
-		padding: 1.95rem;
+		padding: max(1.95rem, 10px);
 		display: flex;
 		flex-direction: column;
-		gap: 3.2rem;
-		border-radius: 2rem;
+		gap: max(3.2rem, 16px);
+		border-radius: max(2rem, 20px);
 		overflow: hidden;
 		&-content {
 			display: flex;
 			flex-direction: column;
-			gap: 1.6rem;
+			gap: max(1.6rem, 10px);
 			align-items: flex-start;
+			@media screen and (max-width: vars.$bp-ipad-pro) {
+				padding-bottom: max(1.1rem, 11px);
+			}
 		}
 		&-label {
-			border-radius: 4.7rem;
-			padding-inline: 0.8rem;
-			padding-block: 0.2rem;
-			padding-bottom: 0.5rem;
+			border-radius: max(4.7rem, 47px);
+			padding-inline: max(0.8rem, 8px);
+			padding-block: max(0.2rem, 2px);
+			padding-bottom: max(0.5rem, 5px);
 			color: #fff;
 			background-color: vars.$primary-600;
-			font-size: 1.4rem;
+			font-size: max(1.4rem, 12px);
 		}
 		&-image {
-			border-radius: 1.8rem;
+			border-radius: max(1.8rem, 18px);
 			box-shadow: -8px 63px 80px -20px #b7d6ea99;
 		}
 	}
 	&__list {
 		display: grid;
-		gap: 2rem;
+		gap: max(2rem, 20px);
 		overflow: hidden;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 }
 .mockup-container {
 	position: relative;
-	border-radius: 2.5rem;
+	border-radius: max(2.5rem, 20px);
 	width: 100%;
 	background-color: #fbfbfb;
 	& > * {
@@ -149,7 +167,7 @@
 .events {
 	display: flex;
 	flex-direction: column;
-	gap: 10rem;
+	gap: max(10rem, 70px);
 	@include mix.spacing(margin, 'large');
 	&__card {
 		z-index: 2;
@@ -160,21 +178,33 @@
 			left: 0;
 			top: 10%;
 			left: -10%;
+			@media screen and (max-width: vars.$bp-ipad-pro) {
+				top: 5%;
+				left: -5%;
+			}
 		}
 		&:nth-child(2) {
 			right: -10%;
 			bottom: -10%;
+			@media screen and (max-width: vars.$bp-ipad-pro) {
+				right: -5%;
+				bottom: 5%;
+			}
 		}
 	}
 	&__container {
 		display: grid;
 		grid-template-columns: 1fr 1.09fr;
 		gap: 12rem;
+		@media screen and (max-width: vars.$bp-ipad-pro) {
+			grid-template-columns: 1fr;
+			gap: max(6rem, 40px);
+		}
 	}
 	&__content {
 		display: flex;
 		flex-direction: column;
-		gap: 4rem;
+		gap: max(4rem, 20px);
 		&-header {
 			align-self: stretch;
 			text-align: left;
@@ -183,21 +213,23 @@
 	}
 	&__list {
 		display: flex;
-		gap: 6rem;
+		gap: max(3rem, 16px);
+		@include mix.flex-scroll;
 	}
 	&__item {
+		flex: 1 1 214px;
 		display: flex;
 		flex-direction: column;
 		h5 {
-			margin-bottom: 0.8rem;
+			margin-bottom: max(0.8rem, 8px);
 		}
 		&-box {
-			margin-bottom: 1.8rem;
-			width: 6rem;
-			height: 6rem;
+			margin-bottom: max(1.8rem, 18px);
+			width: max(6rem, 60px);
+			height: max(6rem, 60px);
 		}
 		&-icon {
-			width: 2.8rem;
+			width: max(2.8rem, 28px);
 		}
 	}
 }
@@ -286,29 +318,102 @@
 	}
 }
 .cta {
+	margin-top: max(5rem, 50px);
 	border-radius: 3rem;
-	aspect-ratio: 1063/451;
 	position: relative;
-	overflow: hidden;
-	@include mix.flex-center;
-	@include mix.spacing(padding, 'large');
+	background-color: vars.$primary-100;
+	display: grid;
+	aspect-ratio: 1063/451;
+	grid-template-columns: 0.75fr 1fr;
 	@include mix.spacing(margin, 'large');
-	&__image {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		inset: 0;
-		z-index: -1;
+	@media screen and (max-width: 700px) {
+		grid-template-columns: 1fr;
+		aspect-ratio: 343/431;
+		overflow-x: clip;
 	}
-	&__content {
-		margin-top: 5%;
+
+	&__left,
+	&__right {
+		z-index: 2;
+	}
+	&__left {
+		height: 100%;
+		width: 100%;
+		position: relative;
+		@media screen and (max-width: 700px) {
+			padding-inline: max(2.5rem, 25px);
+			aspect-ratio: 302/230;
+			&::after {
+				content: '';
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(180deg, rgba(204, 239, 255, 0) 41.67%, #ccefff 91.88%);
+			}
+			& > * {
+				grid-area: 1/1/2/2;
+			}
+		}
+	}
+	&__card {
+		filter: drop-shadow(28px 61px 100px #16112e33);
+		z-index: 2;
+		position: absolute;
+		bottom: 16%;
+		left: -10%;
+		width: 80%;
+		@media screen and (max-width: 700px) {
+			display: none;
+		}
+	}
+	&__mockup {
+		@media screen and (min-width: 700px) {
+			width: 120%;
+			left: -15%;
+			position: absolute;
+			bottom: 0;
+		}
+		@media screen and (max-width: 700px) {
+			width: 100%;
+			height: auto;
+			left: 0;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+	&__vector {
+		border-radius: inherit;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: auto;
+		height: 100%;
+	}
+	&__right {
+		align-self: center;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		gap: 1.2rem;
+		align-items: flex-start;
+		gap: 1rem;
+		@media screen and (max-width: vars.$bp-ipad-pro) {
+			gap: max(1.6rem, 16px);
+		}
+		@media screen and (max-width: 700px) {
+			padding-inline: max(1rem, 10px);
+			align-items: center;
+			text-align: center;
+			padding-bottom: max(2rem, 20px);
+			margin-top: -8%;
+		}
 		button {
-			margin-top: 3.3rem;
+			margin-top: 2.2rem;
+			@media screen and (max-width: vars.$bp-ipad-pro) {
+				margin-top: 0;
+				padding-block: 12px;
+				min-width: 172px;
+			}
 		}
 	}
 }

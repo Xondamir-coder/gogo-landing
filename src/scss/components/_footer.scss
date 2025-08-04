@@ -1,0 +1,126 @@
+@use '@abstracts/variables' as vars;
+@use '@abstracts/mixins' as mix;
+
+.footer {
+	margin-top: max(10rem, 48px);
+	font-weight: 500;
+	font-size: max(1.4rem, 14px);
+	color: vars.$grey;
+	display: flex;
+	flex-direction: column;
+	gap: max(6.4rem, 16px);
+	border: 1px solid #e5e7eb;
+	box-shadow: 0px -1px 1px 1px #0000001a inset;
+	padding-top: max(8rem, 16px);
+	padding-bottom: max(4rem, 16px);
+	margin-inline: max(4rem, 16px);
+	border-radius: max(3.2rem, 16px);
+	position: relative;
+	overflow: hidden;
+	@include mix.spacing(padding, 'small');
+
+	a:hover {
+		color: vars.$primary-500;
+	}
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media screen and (max-width: 600px) {
+			flex-direction: column;
+			gap: max(1rem, 10px);
+		}
+	}
+	&__left {
+		display: flex;
+		gap: max(4.8rem, 16px);
+		align-items: flex-start;
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			gap: max(2.4rem, 16px);
+		}
+		&-container {
+			display: flex;
+			flex-direction: column;
+			gap: max(0.4rem, 4px);
+		}
+	}
+	&__right {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: max(1rem, 10px);
+		column-gap: max(8rem, 40px);
+	}
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		gap: max(1.2rem, 12px);
+		min-width: 100px;
+		@media screen and (max-width: 600px) {
+			&:last-child {
+				order: -1;
+			}
+		}
+	}
+	&__social {
+		display: flex;
+		gap: max(1.6rem, 16px);
+	}
+	&__logo {
+		width: max(5.2rem, 52px);
+	}
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: max(2rem, 20px);
+		@media screen and (max-width: 600px) {
+			grid-template-columns: 1fr;
+		}
+	}
+	&__vector {
+		position: absolute;
+		height: 140%;
+		width: auto;
+		top: 50%;
+		left: 50%;
+		z-index: -1;
+		transform: translate(-60%, -50%);
+		@media screen and (max-width: 600px) {
+			aspect-ratio: 500/566;
+			height: 140%;
+			width: auto;
+			transform: translate(-50%, -50%) scale(1.1, 1.2);
+		}
+	}
+	&__label {
+		color: vars.$primary-900;
+		font-weight: bold;
+	}
+
+	&__social {
+		a {
+			display: flex;
+		}
+		&-link {
+			width: max(2rem, 20px);
+			fill: vars.$grey-light;
+			transition: fill vars.$dt, transform vars.$dt;
+			&:hover {
+				fill: vars.$primary-800;
+				transform: scale(1.15);
+			}
+		}
+	}
+	&__copyright {
+		color: vars.$grey-light;
+		@media screen and (max-width: 600px) {
+			order: 2;
+			text-align: center;
+		}
+	}
+	p {
+		line-height: 150%;
+	}
+}

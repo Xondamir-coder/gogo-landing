@@ -2,7 +2,13 @@
 	align-self: center;
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: max(2rem, 10px);
 	text-align: center;
 	align-items: center;
+	h2 {
+		max-width: 25ch;
+	}
+	p {
+		max-width: 52ch;
+	}
 }

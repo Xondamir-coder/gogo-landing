@@ -71,14 +71,67 @@ document.querySelectorAll('.mockup-container > *').forEach((el, i) => {
 	});
 });
 
-gsapAnimate('.events__content', {
-	x: 50
-});
+gsapAnimate(
+	'.cta__left>*',
+	{
+		scale: 0,
+		rotation: -30,
+		opacity: 0,
+		transformOrigin: 'center center',
+		stagger: {
+			each: 0.12,
+			from: 'start'
+		},
+		duration: 0.5,
+		ease: 'back.out(1.2)' // reduced overshoot
+	},
+	{ trigger: '.cta__left' }
+);
 
-gsapAnimate('.book__content', {
-	x: -50
-});
+gsapAnimate(
+	'.footer__content>*',
+	{
+		y: 50,
+		stagger: 0.2
+	},
+	{
+		trigger: '.footer__content',
+		scrub: false
+	}
+);
+gsapAnimate(
+	'.footer__bottom>*',
+	{
+		y: 50,
+		stagger: 0.2
+	},
+	{
+		trigger: '.footer__bottom',
+		scrub: false
+	}
+);
 
-gsapAnimate('.cta', {
-	scale: 1.2
-});
+// gsapAnimate('.events__content', {
+// 	y: -25
+// });
+
+// gsapAnimate('.book__content', {
+// 	y: 25
+// });
+
+// TODO: animate CTA
+
+/**
+ * Other scripts
+ */
+const setCopyrightYear = () => {
+	const elements = document.querySelectorAll('[data-copyright]');
+	const currentYear = new Date().getFullYear();
+	elements.forEach(el => {
+		if (el.hasAttribute('data-copyright')) {
+			el.textContent = el.textContent.replace('{year}', currentYear);
+		}
+	});
+};
+
+setCopyrightYear();

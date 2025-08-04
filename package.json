@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"images": "node src/js/process-images.js",
-		"dev": "npm run images && vite",
+		"dev": "vite",
 		"build": "npm run images && vite build",
 		"preview": "vite preview"
 	},
