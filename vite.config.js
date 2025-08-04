@@ -34,14 +34,6 @@ export default defineConfig(() => ({
 		terserOptions: {
 			compress: { drop_console: true, drop_debugger: true },
 			format: { comments: false }
-		},
-		rollupOptions: {
-			output: {
-				manualChunks(id) {
-					if (id.includes('node_modules')) return 'vendor';
-				},
-				assetFileNames: 'assets/[name].[hash][extname]'
-			}
 		}
 	}
 }));

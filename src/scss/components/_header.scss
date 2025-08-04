@@ -8,9 +8,6 @@
 	align-items: center;
 	justify-content: space-between;
 	@include mix.spacing(padding, 'small');
-	@media screen and (max-width: vars.$bp-small-mobile) {
-		background-color: transparent;
-	}
 	&__nav {
 		display: flex;
 		gap: max(2.6rem, 10px);

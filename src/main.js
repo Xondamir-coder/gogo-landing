@@ -1,3 +1,4 @@
+import './scss/main.scss';
 import gsap from 'gsap';
 import { gsapAnimate } from './js/gsap';
 
