@@ -1,3 +1,5 @@
+@use 'sass:string';
+
 // 1. Define uniquely named directions with value
 $directions: (
 	// Left
@@ -21,7 +23,7 @@ $directions: (
 
 // 2. Determine axis from direction name
 @function get-axis($direction) {
-	@if str-index($direction, 'top') or str-index($direction, 'bottom') {
+	@if string.index($direction, 'top') or string.index($direction, 'bottom') {
 		@return y;
 	}
 	@return x;

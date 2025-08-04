@@ -1,5 +1,22 @@
 @use '@abstracts/variables' as vars;
 
+// Others
+@mixin spacing($property: padding, $type: 'large') {
+	& {
+		@if ($type == 'large') {
+			#{$property}-inline: vars.$spacing;
+			@media screen and (max-width: vars.$bp-ipad-pro) {
+				#{$property}-inline: max(vars.$spacing / 2, 16px);
+			}
+		} @else {
+			#{$property}-inline: vars.$spacing-sm;
+			@media screen and (max-width: vars.$bp-ipad-pro) {
+				#{$property}-inline: max(vars.$spacing-sm / 2, 16px);
+			}
+		}
+	}
+}
+
 // Layout related
 @mixin grid-center {
 	display: grid;
