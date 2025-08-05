@@ -25,3 +25,21 @@ A fast, localized landing page for the **GoGo Travel App** — promoting events,
     -   HTML generation from templates
     -   Localization using JSON files
     -   Resizing (1920, 1024, 512), converting (AVIF, WEBP) of images using [ImageMagick](https://imagemagick.org/)
+
+---
+
+## 📜 Scripts
+
+### 1. 🔁 Localized HTML Generation
+
+Generates localized `index.html, ru/index.html, zh/index.html` for each supported language from a template and JSON files.
+
+**Script:** `src/js/localize.js`  
+**Run:** `npm run localize`
+
+### 2. 🔁 Resizing images
+
+Generates resized (1920/1024/512), converted (AVIF/WEBP), compressed images in `src/images/resized` for each image in `src/images/originals`
+
+**Script:** `src/js/process-images.js`  
+**Run:** `npm run resize`
