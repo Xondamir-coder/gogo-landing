@@ -5,6 +5,17 @@ import htmlMinifier from 'vite-plugin-html-minifier';
 import createSvgSpritePlugin from 'vite-plugin-svg-sprite';
 import Sitemap from 'vite-plugin-sitemap';
 
+const supportedLanguages = ['en', 'ru', 'zh'];
+const input = supportedLanguages.reduce((entries, lang) => {
+	const file =
+		lang === 'en'
+			? path.resolve(__dirname, 'index.html')
+			: path.resolve(__dirname, lang, 'index.html');
+
+	entries[lang] = file;
+	return entries;
+}, {});
+
 export default defineConfig(() => ({
 	plugins: [
 		htmlMinifier({
@@ -38,6 +49,9 @@ export default defineConfig(() => ({
 		terserOptions: {
 			compress: { drop_console: true, drop_debugger: true },
 			format: { comments: false }
+		},
+		rollupOptions: {
+			input
 		}
 	}
 }));

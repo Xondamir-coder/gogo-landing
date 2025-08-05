@@ -12,13 +12,9 @@
 
 		<!-- SEO -->
 		<!-- Primary Meta Tags -->
-		<title>Откройте для себя события, туры и достопримечательности | Приложение GoGo</title>
-		<meta
-			name="title"
-			content="Откройте для себя события, туры и достопримечательности | Приложение GoGo" />
-		<meta
-			name="description"
-			content="Все события и места в одном тревел-приложении GoGo. Скачайте бесплатно!" />
+		<title>{meta-title}</title>
+		<meta name="title" content="{meta-title}" />
+		<meta name="description" content="{meta-description}" />
 		<meta name="theme-color" content="#ffffff" />
 		<meta
 			name="keywords"
@@ -30,9 +26,7 @@
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://go-go.uz/" />
-		<meta
-			property="og:title"
-			content="Откройте для себя события, туры и достопримечательности | Приложение GoGo" />
+		<meta property="og:title" content="{title}" />
 		<meta
 			property="og:description"
 			content="Открывайте концерты, выставки, туры и рестораны с тревел-приложением GoGo." />
@@ -41,9 +35,7 @@
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content="https://go-go.uz/" />
-		<meta
-			property="twitter:title"
-			content="Откройте для себя события, туры и достопримечательности | Приложение GoGo" />
+		<meta property="twitter:title" content="{title}" />
 		<meta
 			property="twitter:description"
 			content="Открывайте концерты, выставки, туры и рестораны с тревел-приложением GoGo." />
@@ -57,7 +49,7 @@
 		<title>GoGo</title>
 
 		<!-- SCSS -->
-		<!-- <link rel="stylesheet" href="src/scss/main.scss" /> -->
+		<!-- <link rel="stylesheet" href="/src/scss/main.scss" /> -->
 	</head>
 	<body>
 		<div id="app">
@@ -88,35 +80,35 @@
 				<section class="hero">
 					<picture class="hero__image">
 						<source
-							srcset="src/images/resized/hero-1920.avif"
+							srcset="/src/images/resized/hero-1920.avif"
 							type="image/avif"
 							media="(min-width: 1025px)" />
 						<source
-							srcset="src/images/resized/hero-1024.avif"
+							srcset="/src/images/resized/hero-1024.avif"
 							type="image/avif"
 							media="(min-width: 513px)" />
 						<source
-							srcset="src/images/resized/hero-512.avif"
+							srcset="/src/images/resized/hero-512.avif"
 							type="image/avif"
 							media="(max-width: 512px)" />
 
 						<!-- Optional WebP sources -->
 						<source
-							srcset="src/images/resized/hero-1920.webp"
+							srcset="/src/images/resized/hero-1920.webp"
 							type="image/webp"
 							media="(min-width: 1025px)" />
 						<source
-							srcset="src/images/resized/hero-1024.webp"
+							srcset="/src/images/resized/hero-1024.webp"
 							type="image/webp"
 							media="(min-width: 513px)" />
 						<source
-							srcset="src/images/resized/hero-512.webp"
+							srcset="/src/images/resized/hero-512.webp"
 							type="image/webp"
 							media="(max-width: 512px)" />
 
 						<!-- Fallback JPG (only 1920) -->
 						<img
-							src="src/images/resized/hero-1920.jpg"
+							src="/src/images/resized/hero-1920.jpg"
 							alt="Hero banner"
 							fetchpriority="high"
 							width="1920" />
@@ -210,33 +202,33 @@
 						<li class="facilities__item">
 							<picture class="facilities__item-image">
 								<source
-									srcset="src/images/resized/facilities-1-1920.avif"
+									srcset="/src/images/resized/facilities-1-1920.avif"
 									type="image/avif"
 									media="(min-width: 1025px)" />
 								<source
-									srcset="src/images/resized/facilities-1-1024.avif"
+									srcset="/src/images/resized/facilities-1-1024.avif"
 									type="image/avif"
 									media="(min-width: 513px)" />
 								<source
-									srcset="src/images/resized/facilities-1-512.avif"
+									srcset="/src/images/resized/facilities-1-512.avif"
 									type="image/avif"
 									media="(max-width: 512px)" />
 
 								<source
-									srcset="src/images/resized/facilities-1-1920.webp"
+									srcset="/src/images/resized/facilities-1-1920.webp"
 									type="image/webp"
 									media="(min-width: 1025px)" />
 								<source
-									srcset="src/images/resized/facilities-1-1024.webp"
+									srcset="/src/images/resized/facilities-1-1024.webp"
 									type="image/webp"
 									media="(min-width: 513px)" />
 								<source
-									srcset="src/images/resized/facilities-1-512.webp"
+									srcset="/src/images/resized/facilities-1-512.webp"
 									type="image/webp"
 									media="(max-width: 512px)" />
 
 								<img
-									src="src/images/resized/facilities-1-1920.jpg"
+									src="/src/images/resized/facilities-1-1920.jpg"
 									alt="1st banner" />
 							</picture>
 							<div class="facilities__item-content">
@@ -251,33 +243,33 @@
 						<li class="facilities__item">
 							<picture class="facilities__item-image">
 								<source
-									srcset="src/images/resized/facilities-2-1920.avif"
+									srcset="/src/images/resized/facilities-2-1920.avif"
 									type="image/avif"
 									media="(min-width: 1025px)" />
 								<source
-									srcset="src/images/resized/facilities-2-1024.avif"
+									srcset="/src/images/resized/facilities-2-1024.avif"
 									type="image/avif"
 									media="(min-width: 513px)" />
 								<source
-									srcset="src/images/resized/facilities-2-512.avif"
+									srcset="/src/images/resized/facilities-2-512.avif"
 									type="image/avif"
 									media="(max-width: 512px)" />
 
 								<source
-									srcset="src/images/resized/facilities-2-1920.webp"
+									srcset="/src/images/resized/facilities-2-1920.webp"
 									type="image/webp"
 									media="(min-width: 1025px)" />
 								<source
-									srcset="src/images/resized/facilities-2-1024.webp"
+									srcset="/src/images/resized/facilities-2-1024.webp"
 									type="image/webp"
 									media="(min-width: 513px)" />
 								<source
-									srcset="src/images/resized/facilities-2-512.webp"
+									srcset="/src/images/resized/facilities-2-512.webp"
 									type="image/webp"
 									media="(max-width: 512px)" />
 
 								<img
-									src="src/images/resized/facilities-2-1920.jpg"
+									src="/src/images/resized/facilities-2-1920.jpg"
 									alt="1st banner" />
 							</picture>
 							<div class="facilities__item-content">
@@ -292,33 +284,33 @@
 						<li class="facilities__item">
 							<picture class="facilities__item-image">
 								<source
-									srcset="src/images/resized/facilities-3-1920.avif"
+									srcset="/src/images/resized/facilities-3-1920.avif"
 									type="image/avif"
 									media="(min-width: 1025px)" />
 								<source
-									srcset="src/images/resized/facilities-3-1024.avif"
+									srcset="/src/images/resized/facilities-3-1024.avif"
 									type="image/avif"
 									media="(min-width: 513px)" />
 								<source
-									srcset="src/images/resized/facilities-3-512.avif"
+									srcset="/src/images/resized/facilities-3-512.avif"
 									type="image/avif"
 									media="(max-width: 512px)" />
 
 								<source
-									srcset="src/images/resized/facilities-3-1920.webp"
+									srcset="/src/images/resized/facilities-3-1920.webp"
 									type="image/webp"
 									media="(min-width: 1025px)" />
 								<source
-									srcset="src/images/resized/facilities-3-1024.webp"
+									srcset="/src/images/resized/facilities-3-1024.webp"
 									type="image/webp"
 									media="(min-width: 513px)" />
 								<source
-									srcset="src/images/resized/facilities-3-512.webp"
+									srcset="/src/images/resized/facilities-3-512.webp"
 									type="image/webp"
 									media="(max-width: 512px)" />
 
 								<img
-									src="src/images/resized/facilities-3-1920.jpg"
+									src="/src/images/resized/facilities-3-1920.jpg"
 									alt="1st banner" />
 							</picture>
 							<div class="facilities__item-content">
@@ -345,92 +337,96 @@
 						<div class="mockup-container">
 							<picture class="events__card">
 								<source
-									srcset="src/images/resized/events-card-1-1920.avif"
+									srcset="/src/images/resized/events-card-1-1920.avif"
 									type="image/avif"
 									media="(min-width: 1025px)" />
 								<source
-									srcset="src/images/resized/events-card-1-1024.avif"
+									srcset="/src/images/resized/events-card-1-1024.avif"
 									type="image/avif"
 									media="(min-width: 513px)" />
 								<source
-									srcset="src/images/resized/events-card-1-512.avif"
+									srcset="/src/images/resized/events-card-1-512.avif"
 									type="image/avif"
 									media="(max-width: 512px)" />
 
 								<source
-									srcset="src/images/resized/events-card-1-1920.webp"
+									srcset="/src/images/resized/events-card-1-1920.webp"
 									type="image/webp"
 									media="(min-width: 1025px)" />
 								<source
-									srcset="src/images/resized/events-card-1-1024.webp"
+									srcset="/src/images/resized/events-card-1-1024.webp"
 									type="image/webp"
 									media="(min-width: 513px)" />
 								<source
-									srcset="src/images/resized/events-card-1-512.webp"
+									srcset="/src/images/resized/events-card-1-512.webp"
 									type="image/webp"
 									media="(max-width: 512px)" />
 
-								<img src="src/images/resized/events-card-1-1920.png" alt="card 1" />
+								<img
+									src="/src/images/resized/events-card-1-1920.png"
+									alt="card 1" />
 							</picture>
 
 							<picture class="events__card">
 								<source
-									srcset="src/images/resized/events-card-2-1920.avif"
+									srcset="/src/images/resized/events-card-2-1920.avif"
 									type="image/avif"
 									media="(min-width: 1025px)" />
 								<source
-									srcset="src/images/resized/events-card-2-1024.avif"
+									srcset="/src/images/resized/events-card-2-1024.avif"
 									type="image/avif"
 									media="(min-width: 513px)" />
 								<source
-									srcset="src/images/resized/events-card-2-512.avif"
+									srcset="/src/images/resized/events-card-2-512.avif"
 									type="image/avif"
 									media="(max-width: 512px)" />
 
 								<source
-									srcset="src/images/resized/events-card-2-1920.webp"
+									srcset="/src/images/resized/events-card-2-1920.webp"
 									type="image/webp"
 									media="(min-width: 1025px)" />
 								<source
-									srcset="src/images/resized/events-card-2-1024.webp"
+									srcset="/src/images/resized/events-card-2-1024.webp"
 									type="image/webp"
 									media="(min-width: 513px)" />
 								<source
-									srcset="src/images/resized/events-card-2-512.webp"
+									srcset="/src/images/resized/events-card-2-512.webp"
 									type="image/webp"
 									media="(max-width: 512px)" />
 
-								<img src="src/images/resized/events-card-2-1920.png" alt="card 2" />
+								<img
+									src="/src/images/resized/events-card-2-1920.png"
+									alt="card 2" />
 							</picture>
 
 							<picture class="mockup-image">
 								<source
-									srcset="src/images/resized/mockup-1920.avif"
+									srcset="/src/images/resized/mockup-1920.avif"
 									type="image/avif"
 									media="(min-width: 1025px)" />
 								<source
-									srcset="src/images/resized/mockup-1024.avif"
+									srcset="/src/images/resized/mockup-1024.avif"
 									type="image/avif"
 									media="(min-width: 513px)" />
 								<source
-									srcset="src/images/resized/mockup-512.avif"
+									srcset="/src/images/resized/mockup-512.avif"
 									type="image/avif"
 									media="(max-width: 512px)" />
 
 								<source
-									srcset="src/images/resized/mockup-1920.webp"
+									srcset="/src/images/resized/mockup-1920.webp"
 									type="image/webp"
 									media="(min-width: 1025px)" />
 								<source
-									srcset="src/images/resized/mockup-1024.webp"
+									srcset="/src/images/resized/mockup-1024.webp"
 									type="image/webp"
 									media="(min-width: 513px)" />
 								<source
-									srcset="src/images/resized/mockup-512.webp"
+									srcset="/src/images/resized/mockup-512.webp"
 									type="image/webp"
 									media="(max-width: 512px)" />
 
-								<img src="src/images/resized/mockup-1920.png" alt="mockup" />
+								<img src="/src/images/resized/mockup-1920.png" alt="mockup" />
 							</picture>
 						</div>
 						<div class="events__content">
@@ -482,62 +478,62 @@
 					<div class="mockup-container">
 						<picture class="mockup-image">
 							<source
-								srcset="src/images/resized/book-mockup-1920.avif"
+								srcset="/src/images/resized/book-mockup-1920.avif"
 								type="image/avif"
 								media="(min-width: 1025px)" />
 							<source
-								srcset="src/images/resized/book-mockup-1024.avif"
+								srcset="/src/images/resized/book-mockup-1024.avif"
 								type="image/avif"
 								media="(min-width: 513px)" />
 							<source
-								srcset="src/images/resized/book-mockup-512.avif"
+								srcset="/src/images/resized/book-mockup-512.avif"
 								type="image/avif"
 								media="(max-width: 512px)" />
 
 							<source
-								srcset="src/images/resized/book-mockup-1920.webp"
+								srcset="/src/images/resized/book-mockup-1920.webp"
 								type="image/webp"
 								media="(min-width: 1025px)" />
 							<source
-								srcset="src/images/resized/book-mockup-1024.webp"
+								srcset="/src/images/resized/book-mockup-1024.webp"
 								type="image/webp"
 								media="(min-width: 513px)" />
 							<source
-								srcset="src/images/resized/book-mockup-512.webp"
+								srcset="/src/images/resized/book-mockup-512.webp"
 								type="image/webp"
 								media="(max-width: 512px)" />
 
-							<img src="src/images/resized/book-mockup-1920.png" alt="mockup" />
+							<img src="/src/images/resized/book-mockup-1920.png" alt="mockup" />
 						</picture>
 
 						<picture class="book__calendar">
 							<source
-								srcset="src/images/resized/calendar-1920.avif"
+								srcset="/src/images/resized/calendar-1920.avif"
 								type="image/avif"
 								media="(min-width: 1025px)" />
 							<source
-								srcset="src/images/resized/calendar-1024.avif"
+								srcset="/src/images/resized/calendar-1024.avif"
 								type="image/avif"
 								media="(min-width: 513px)" />
 							<source
-								srcset="src/images/resized/calendar-512.avif"
+								srcset="/src/images/resized/calendar-512.avif"
 								type="image/avif"
 								media="(max-width: 512px)" />
 
 							<source
-								srcset="src/images/resized/calendar-1920.webp"
+								srcset="/src/images/resized/calendar-1920.webp"
 								type="image/webp"
 								media="(min-width: 1025px)" />
 							<source
-								srcset="src/images/resized/calendar-1024.webp"
+								srcset="/src/images/resized/calendar-1024.webp"
 								type="image/webp"
 								media="(min-width: 513px)" />
 							<source
-								srcset="src/images/resized/calendar-512.webp"
+								srcset="/src/images/resized/calendar-512.webp"
 								type="image/webp"
 								media="(max-width: 512px)" />
 
-							<img src="src/images/resized/calendar-1920.png" alt="calendar" />
+							<img src="/src/images/resized/calendar-1920.png" alt="calendar" />
 						</picture>
 					</div>
 				</section>
@@ -575,32 +571,32 @@
 							<div class="reviews__item-bottom">
 								<picture class="reviews__item-pfp">
 									<source
-										srcset="src/images/resized/user-0-1920.avif"
+										srcset="/src/images/resized/user-0-1920.avif"
 										type="image/avif"
 										media="(min-width: 1025px)" />
 									<source
-										srcset="src/images/resized/user-0-1024.avif"
+										srcset="/src/images/resized/user-0-1024.avif"
 										type="image/avif"
 										media="(min-width: 513px)" />
 									<source
-										srcset="src/images/resized/user-0-512.avif"
+										srcset="/src/images/resized/user-0-512.avif"
 										type="image/avif"
 										media="(max-width: 512px)" />
 
 									<source
-										srcset="src/images/resized/user-0-1920.webp"
+										srcset="/src/images/resized/user-0-1920.webp"
 										type="image/webp"
 										media="(min-width: 1025px)" />
 									<source
-										srcset="src/images/resized/user-0-1024.webp"
+										srcset="/src/images/resized/user-0-1024.webp"
 										type="image/webp"
 										media="(min-width: 513px)" />
 									<source
-										srcset="src/images/resized/user-0-512.webp"
+										srcset="/src/images/resized/user-0-512.webp"
 										type="image/webp"
 										media="(max-width: 512px)" />
 
-									<img src="src/images/resized/user-0-1920.png" alt="user" />
+									<img src="/src/images/resized/user-0-1920.png" alt="user" />
 								</picture>
 
 								<div class="reviews__item-info">
@@ -643,32 +639,32 @@
 							<div class="reviews__item-bottom">
 								<picture class="reviews__item-pfp">
 									<source
-										srcset="src/images/resized/user-1-1920.avif"
+										srcset="/src/images/resized/user-1-1920.avif"
 										type="image/avif"
 										media="(min-width: 1025px)" />
 									<source
-										srcset="src/images/resized/user-1-1024.avif"
+										srcset="/src/images/resized/user-1-1024.avif"
 										type="image/avif"
 										media="(min-width: 513px)" />
 									<source
-										srcset="src/images/resized/user-1-512.avif"
+										srcset="/src/images/resized/user-1-512.avif"
 										type="image/avif"
 										media="(max-width: 512px)" />
 
 									<source
-										srcset="src/images/resized/user-1-1920.webp"
+										srcset="/src/images/resized/user-1-1920.webp"
 										type="image/webp"
 										media="(min-width: 1025px)" />
 									<source
-										srcset="src/images/resized/user-1-1024.webp"
+										srcset="/src/images/resized/user-1-1024.webp"
 										type="image/webp"
 										media="(min-width: 513px)" />
 									<source
-										srcset="src/images/resized/user-1-512.webp"
+										srcset="/src/images/resized/user-1-512.webp"
 										type="image/webp"
 										media="(max-width: 512px)" />
 
-									<img src="src/images/resized/user-1-1920.png" alt="user" />
+									<img src="/src/images/resized/user-1-1920.png" alt="user" />
 								</picture>
 								<div class="reviews__item-info">
 									<h5 class="heading-5 clr-primary-900">Анна</h5>
@@ -710,32 +706,32 @@
 							<div class="reviews__item-bottom">
 								<picture class="reviews__item-pfp">
 									<source
-										srcset="src/images/resized/user-2-1920.avif"
+										srcset="/src/images/resized/user-2-1920.avif"
 										type="image/avif"
 										media="(min-width: 1025px)" />
 									<source
-										srcset="src/images/resized/user-2-1024.avif"
+										srcset="/src/images/resized/user-2-1024.avif"
 										type="image/avif"
 										media="(min-width: 513px)" />
 									<source
-										srcset="src/images/resized/user-2-512.avif"
+										srcset="/src/images/resized/user-2-512.avif"
 										type="image/avif"
 										media="(max-width: 512px)" />
 
 									<source
-										srcset="src/images/resized/user-2-1920.webp"
+										srcset="/src/images/resized/user-2-1920.webp"
 										type="image/webp"
 										media="(min-width: 1025px)" />
 									<source
-										srcset="src/images/resized/user-2-1024.webp"
+										srcset="/src/images/resized/user-2-1024.webp"
 										type="image/webp"
 										media="(min-width: 513px)" />
 									<source
-										srcset="src/images/resized/user-2-512.webp"
+										srcset="/src/images/resized/user-2-512.webp"
 										type="image/webp"
 										media="(max-width: 512px)" />
 
-									<img src="src/images/resized/user-2-1920.png" alt="user" />
+									<img src="/src/images/resized/user-2-1920.png" alt="user" />
 								</picture>
 								<div class="reviews__item-info">
 									<h5 class="heading-5 clr-primary-900">Айгерим</h5>
@@ -777,32 +773,32 @@
 							<div class="reviews__item-bottom">
 								<picture class="reviews__item-pfp">
 									<source
-										srcset="src/images/resized/user-3-1920.avif"
+										srcset="/src/images/resized/user-3-1920.avif"
 										type="image/avif"
 										media="(min-width: 1025px)" />
 									<source
-										srcset="src/images/resized/user-3-1024.avif"
+										srcset="/src/images/resized/user-3-1024.avif"
 										type="image/avif"
 										media="(min-width: 513px)" />
 									<source
-										srcset="src/images/resized/user-3-512.avif"
+										srcset="/src/images/resized/user-3-512.avif"
 										type="image/avif"
 										media="(max-width: 512px)" />
 
 									<source
-										srcset="src/images/resized/user-3-1920.webp"
+										srcset="/src/images/resized/user-3-1920.webp"
 										type="image/webp"
 										media="(min-width: 1025px)" />
 									<source
-										srcset="src/images/resized/user-3-1024.webp"
+										srcset="/src/images/resized/user-3-1024.webp"
 										type="image/webp"
 										media="(min-width: 513px)" />
 									<source
-										srcset="src/images/resized/user-3-512.webp"
+										srcset="/src/images/resized/user-3-512.webp"
 										type="image/webp"
 										media="(max-width: 512px)" />
 
-									<img src="src/images/resized/user-3-1920.png" alt="user" />
+									<img src="/src/images/resized/user-3-1920.png" alt="user" />
 								</picture>
 								<div class="reviews__item-info">
 									<h5 class="heading-5 clr-primary-900">Lukas</h5>
@@ -822,67 +818,67 @@
 					<div class="cta__left">
 						<picture class="cta__card">
 							<source
-								srcset="src/images/resized/events-card-3-1920.avif"
+								srcset="/src/images/resized/events-card-3-1920.avif"
 								type="image/avif"
 								media="(min-width: 1025px)" />
 							<source
-								srcset="src/images/resized/events-card-3-1024.avif"
+								srcset="/src/images/resized/events-card-3-1024.avif"
 								type="image/avif"
 								media="(min-width: 513px)" />
 							<source
-								srcset="src/images/resized/events-card-3-512.avif"
+								srcset="/src/images/resized/events-card-3-512.avif"
 								type="image/avif"
 								media="(max-width: 512px)" />
 
 							<!-- Optional WebP sources -->
 							<source
-								srcset="src/images/resized/events-card-3-1920.webp"
+								srcset="/src/images/resized/events-card-3-1920.webp"
 								type="image/webp"
 								media="(min-width: 1025px)" />
 							<source
-								srcset="src/images/resized/events-card-3-1024.webp"
+								srcset="/src/images/resized/events-card-3-1024.webp"
 								type="image/webp"
 								media="(min-width: 513px)" />
 							<source
-								srcset="src/images/resized/events-card-3-512.webp"
+								srcset="/src/images/resized/events-card-3-512.webp"
 								type="image/webp"
 								media="(max-width: 512px)" />
 
 							<!-- Fallback PNG (only 1920) -->
 							<img
-								src="src/images/resized/events-card-3-1920.png"
+								src="/src/images/resized/events-card-3-1920.png"
 								alt="events card" />
 						</picture>
 						<picture class="cta__mockup">
 							<source
-								srcset="src/images/resized/cta-mockup-1920.avif"
+								srcset="/src/images/resized/cta-mockup-1920.avif"
 								type="image/avif"
 								media="(min-width: 1025px)" />
 							<source
-								srcset="src/images/resized/cta-mockup-1024.avif"
+								srcset="/src/images/resized/cta-mockup-1024.avif"
 								type="image/avif"
 								media="(min-width: 513px)" />
 							<source
-								srcset="src/images/resized/cta-mockup-512.avif"
+								srcset="/src/images/resized/cta-mockup-512.avif"
 								type="image/avif"
 								media="(max-width: 512px)" />
 
 							<!-- Optional WebP sources -->
 							<source
-								srcset="src/images/resized/cta-mockup-1920.webp"
+								srcset="/src/images/resized/cta-mockup-1920.webp"
 								type="image/webp"
 								media="(min-width: 1025px)" />
 							<source
-								srcset="src/images/resized/cta-mockup-1024.webp"
+								srcset="/src/images/resized/cta-mockup-1024.webp"
 								type="image/webp"
 								media="(min-width: 513px)" />
 							<source
-								srcset="src/images/resized/cta-mockup-512.webp"
+								srcset="/src/images/resized/cta-mockup-512.webp"
 								type="image/webp"
 								media="(max-width: 512px)" />
 
 							<!-- Fallback PNG (only 1920) -->
-							<img src="src/images/resized/cta-mockup-1920.png" alt="cta mockup" />
+							<img src="/src/images/resized/cta-mockup-1920.png" alt="cta mockup" />
 						</picture>
 					</div>
 					<div class="cta__right">

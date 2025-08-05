@@ -4,9 +4,10 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"images": "node src/js/process-images.js",
-		"dev": "vite",
-		"build": "npm run images && vite build",
+		"localize": "node src/js/localize.js",
+		"resize": "node src/js/process-images.js",
+		"dev": "npm run localize && vite",
+		"build": "npm run localize && vite build",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
