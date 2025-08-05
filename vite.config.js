@@ -3,6 +3,7 @@ import path from 'path';
 import autoprefixer from 'autoprefixer';
 import htmlMinifier from 'vite-plugin-html-minifier';
 import createSvgSpritePlugin from 'vite-plugin-svg-sprite';
+import Sitemap from 'vite-plugin-sitemap';
 
 export default defineConfig(() => ({
 	plugins: [
@@ -13,6 +14,9 @@ export default defineConfig(() => ({
 			symbolId: 'icon-[name]',
 			exportType: 'vanilla',
 			include: ['**/icons/*.svg']
+		}),
+		Sitemap({
+			hostname: 'https://go-go.uz'
 		})
 	],
 	resolve: {

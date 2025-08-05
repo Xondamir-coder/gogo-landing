@@ -130,7 +130,7 @@ const setCopyrightYear = () => {
 	const currentYear = new Date().getFullYear();
 	elements.forEach(el => {
 		if (el.hasAttribute('data-copyright')) {
-			el.textContent = el.textContent.replace('{year}', currentYear);
+			el.textContent = currentYear;
 		}
 	});
 };

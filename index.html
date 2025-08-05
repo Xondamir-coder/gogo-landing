@@ -6,11 +6,52 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Favicon -->
-		<link rel="icon" href="/favicons/favicon.ico" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="478x478" href="/favicons/favicon-478x478.png" />
+		<link rel="icon" href="/favicons/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href="/favicons/favicon.ico" sizes="any" />
 		<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
+
+		<!-- SEO -->
+		<!-- Primary Meta Tags -->
+		<title>Откройте для себя события, туры и достопримечательности | Приложение GoGo</title>
+		<meta
+			name="title"
+			content="Откройте для себя события, туры и достопримечательности | Приложение GoGo" />
+		<meta
+			name="description"
+			content="Все события и места в одном тревел-приложении GoGo. Скачайте бесплатно!" />
+		<meta name="theme-color" content="#ffffff" />
+		<meta
+			name="keywords"
+			content="travel app, events near me, concerts, exhibitions, restaurants, city guide, tours, attractions, GoGo app, explore city, things to do" />
+		<meta name="robots" content="index, follow" />
+		<meta name="publisher" content="Spacelabs, https://spacelabs.studio" />
+		<meta name="author" content="Spacelabs, https://spacelabs.studio" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://go-go.uz/" />
+		<meta
+			property="og:title"
+			content="Откройте для себя события, туры и достопримечательности | Приложение GoGo" />
+		<meta
+			property="og:description"
+			content="Открывайте концерты, выставки, туры и рестораны с тревел-приложением GoGo." />
+		<meta property="og:image" content="https://go-go.uz/facilities-3-1920.png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://go-go.uz/" />
+		<meta
+			property="twitter:title"
+			content="Откройте для себя события, туры и достопримечательности | Приложение GoGo" />
+		<meta
+			property="twitter:description"
+			content="Открывайте концерты, выставки, туры и рестораны с тревел-приложением GoGo." />
+		<meta property="twitter:image" content="https://go-go.uz/facilities-3-1920.png" />
+
+		<!-- App Store Links (Optional) -->
+		<!-- <meta name="apple-itunes-app" content="app-id=1234567890" />
+		<meta name="google-play-app" content="app-id=com.gogo.travel" /> -->
 
 		<!-- Title -->
 		<title>GoGo</title>
@@ -21,11 +62,14 @@
 	<body>
 		<div id="app">
 			<header class="header">
-				<a href="#" class="header__logo" onclick="location.reload(); return false;">
+				<button
+					class="header__logo"
+					onclick="location.reload(); return false;"
+					aria-label="Reload page">
 					<svg viewBox="0 0 148 44">
 						<use href="#icon-logo"></use>
 					</svg>
-				</a>
+				</button>
 				<nav class="header__nav">
 					<a href="#home" class="header__link">Главная </a>
 					<a href="#home" class="header__link">О проекте </a>
@@ -79,7 +123,7 @@
 					</picture>
 
 					<div class="hero__content">
-						<h1 class="heading-1">Город у тебя в кармане</h1>
+						<h1 class="heading-1">Узбекистан у тебя в кармане</h1>
 						<p>
 							События, выставки, концерты, рестораны, туры, достопримечательности —
 							всё собрано в одном приложении
@@ -874,7 +918,7 @@
 							<div class="footer__left-container">
 								<span class="footer__label"> Контакты: </span>
 								<a href="tel:+998 90 009 00 09"> +998 90 009 00 09 </a>
-								<a href="mailto:hello@asalbola.uz">hello@asalbola.uz</a>
+								<a href="mailto:hello@go-go.uz">hello@go-go.uz</a>
 							</div>
 						</div>
 					</div>
@@ -901,8 +945,15 @@
 					</div>
 				</div>
 				<div class="footer__bottom">
-					<p class="footer__copyright" data-copyright>
-						© {year} Creative Uzbeks Studio. All rights reserved.
+					<p class="footer__copyright">
+						© <span data-copyright>{year}</span> Разработано
+						<a
+							href="https://spacelabs.studio"
+							target="_blank"
+							rel="noopener noreferrer">
+							Spacelabs
+						</a>
+						. Все права защищены.
 					</p>
 					<div class="footer__social">
 						<a href="https://facebook.com">

@@ -10,7 +10,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
+	gap: max(1rem, 10px);
 	padding-block: 14px;
 	padding-inline: max(3.15rem, 26px);
 	position: relative;
@@ -34,7 +34,7 @@
 	}
 
 	span {
-		margin-bottom: 4%;
+		margin-bottom: 2.5%;
 		z-index: 2;
 	}
 	svg {

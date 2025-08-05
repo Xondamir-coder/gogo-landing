@@ -15,6 +15,7 @@
 		"terser": "^5.43.1",
 		"vite": "^7.0.4",
 		"vite-plugin-html-minifier": "^1.0.5",
+		"vite-plugin-sitemap": "^0.8.2",
 		"vite-plugin-svg-sprite": "^0.6.3"
 	},
 	"dependencies": {

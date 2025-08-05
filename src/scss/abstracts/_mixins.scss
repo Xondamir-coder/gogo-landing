@@ -40,7 +40,7 @@
 		scroll-snap-align: $snap-align;
 	}
 }
-@mixin flex-scroll($snap-align: start) {
+@mixin flex-scroll($child-width: 200px, $snap-align: start) {
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	&::-webkit-scrollbar {
@@ -48,6 +48,7 @@
 	}
 	& > * {
 		scroll-snap-align: $snap-align;
+		flex: 1 0 $child-width;
 	}
 }
 @mixin flex-between {

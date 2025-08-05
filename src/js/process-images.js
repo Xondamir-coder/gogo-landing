@@ -7,8 +7,8 @@ const inputDir = 'src/images/originals';
 const outputDir = 'src/images/resized';
 
 const resizeMap = {
-	512: 512 / 1920,
-	1024: 1024 / 1920,
+	512: 0.6,
+	1024: 0.75,
 	1920: 1
 };
 

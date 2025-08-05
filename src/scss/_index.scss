@@ -45,6 +45,9 @@
 		flex-direction: column;
 		gap: max(2rem, 16px);
 		$header-anim-duration: 0.4s;
+		@media screen and (max-width: vars.$bp-small-mobile) {
+			padding-inline: 20px;
+		}
 		& > * {
 			animation: slide-from-bottom-20 0.5s backwards;
 			@for $i from 1 through 10 {
@@ -60,12 +63,15 @@
 	&__buttons {
 		margin-top: 1rem;
 		display: flex;
-		gap: 2rem;
+		gap: max(2rem, 12px);
 		@media screen and (max-width: 525px) {
-			gap: 0;
+			align-self: stretch;
+			justify-content: center;
 		}
 		& > * {
-			padding-block: max(1rem, 10px);
+			font-size: max(1.8rem, 16px);
+			padding-inline: max(3.15rem, 16px);
+			padding-block: max(1.4rem, 12px);
 		}
 	}
 }
@@ -154,6 +160,9 @@
 	border-radius: max(2.5rem, 20px);
 	width: 100%;
 	background-color: #fbfbfb;
+	@media screen and (max-width: vars.$bp-large-mobile) {
+		aspect-ratio: 343/314;
+	}
 	& > * {
 		position: absolute;
 	}
@@ -197,11 +206,15 @@
 		grid-template-columns: 1fr 1.09fr;
 		gap: 12rem;
 		@media screen and (max-width: vars.$bp-ipad-pro) {
+			gap: max(6rem, 20px);
+		}
+		@media screen and (max-width: vars.$bp-large-mobile) {
 			grid-template-columns: 1fr;
 			gap: max(6rem, 40px);
 		}
 	}
 	&__content {
+		min-width: 0;
 		display: flex;
 		flex-direction: column;
 		gap: max(4rem, 20px);
@@ -214,20 +227,23 @@
 	&__list {
 		display: flex;
 		gap: max(3rem, 16px);
-		@include mix.flex-scroll;
+		width: 100%;
+		@include mix.flex-scroll(214px);
 	}
 	&__item {
-		flex: 1 1 214px;
 		display: flex;
 		flex-direction: column;
+
 		h5 {
 			margin-bottom: max(0.8rem, 8px);
 		}
+
 		&-box {
 			margin-bottom: max(1.8rem, 18px);
 			width: max(6rem, 60px);
 			height: max(6rem, 60px);
 		}
+
 		&-icon {
 			width: max(2.8rem, 28px);
 		}
@@ -238,6 +254,14 @@
 	grid-template-columns: 1.33fr 1fr;
 	gap: 4.2rem;
 	@include mix.spacing(margin, 'large');
+	@media screen and (max-width: vars.$bp-large-mobile) {
+		grid-template-columns: 1fr;
+		gap: max(2rem, 20px);
+		.mockup-container {
+			order: -1;
+			margin-top: 50px;
+		}
+	}
 	&__content {
 		display: flex;
 		flex-direction: column;
@@ -249,6 +273,10 @@
 		right: -16.7%;
 		bottom: 9%;
 		filter: drop-shadow(-28px 61px 100px #16112e33);
+		@media screen and (max-width: vars.$bp-large-mobile) {
+			right: -9%;
+			width: 60%;
+		}
 	}
 	& > *:last-child {
 		aspect-ratio: 436/400;
