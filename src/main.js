@@ -112,16 +112,6 @@ gsapAnimate(
 	}
 );
 
-// gsapAnimate('.events__content', {
-// 	y: -25
-// });
-
-// gsapAnimate('.book__content', {
-// 	y: 25
-// });
-
-// TODO: animate CTA
-
 /**
  * Other scripts
  */

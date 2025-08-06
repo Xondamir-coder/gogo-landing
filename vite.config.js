@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite';
 import path from 'path';
 import autoprefixer from 'autoprefixer';
-import htmlMinifier from 'vite-plugin-html-minifier';
 import createSvgSpritePlugin from 'vite-plugin-svg-sprite';
+import htmlMinifier from 'vite-plugin-html-minifier';
 import Sitemap from 'vite-plugin-sitemap';
+import viteCompression from 'vite-plugin-compression';
 
 const supportedLanguages = ['en', 'ru', 'zh'];
 const input = supportedLanguages.reduce((entries, lang) => {
@@ -28,7 +29,8 @@ export default defineConfig(() => ({
 		}),
 		Sitemap({
 			hostname: 'https://go-go.uz'
-		})
+		}),
+		viteCompression({ algorithm: 'brotliCompress' })
 	],
 	resolve: {
 		alias: {
