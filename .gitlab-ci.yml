@@ -1,0 +1,14 @@
+image: alpine:latest
+pages:
+    stage: deploy
+    before_script:
+        - npm -v
+    script:
+        - cp -r -u * /var/www/go-go.uz
+        - cd /var/www/go-go.uz
+        - ls -la
+    artifacts:
+        paths:
+            - ./*
+    only:
+        - main
