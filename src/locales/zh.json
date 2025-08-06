@@ -1,4 +1,72 @@
 {
-	"meta-title": "发现活动、旅游和景点 | GoGo 应用程序",
-	"meta-description": "所有活动和地点尽在 GoGo 旅行应用，一站式体验，免费下载！"
+	"meta-title": "发现活动、旅游和景点 | GoGo 应用",
+	"meta-description": "所有活动和地点尽在一个旅行应用——GoGo。免费下载！",
+	"meta-keywords": "旅行应用, 附近的活动, 音乐会, 展览, 餐厅, 城市指南, 旅游, 景点, GoGo 应用, 探索城市, 有什么好玩的",
+	"meta-og-description": "使用 GoGo 旅行应用发现音乐会、展览、旅游和餐厅。",
+
+	"link-home": "首页",
+	"link-project": "关于项目",
+	"link-about": "关于我们",
+	"link-features": "功能",
+	"link-contacts": "联系方式",
+	"link-news": "新闻",
+	"link-hotels": "酒店",
+	"link-restaurants": "餐厅",
+	"link-events": "活动",
+	"link-concerts": "音乐会",
+	"link-help": "帮助",
+	"link-instructions": "使用说明",
+
+	"download": "下载",
+	"learn-more": "了解更多",
+
+	"hero-title": "乌兹别克斯坦尽在你手中",
+	"hero-text": "活动、展览、音乐会、餐厅、旅游、景点——一切尽在一个应用中",
+
+	"essentials-title": "一站式服务",
+	"essentials-text": "不再需要浏览多个网站。我们的应用中一应俱全。",
+	"essentials-item-title-1": "充满活力的城市",
+	"essentials-item-title-2": "你的口袋助手",
+	"essentials-item-title-3": "方便快捷",
+	"essentials-item-text-1": "从大型音乐会开始，融入城市生活中心",
+	"essentials-item-text-2": "轻松计划、预订并探索城市",
+	"essentials-item-text-3": "无需费时搜索——只需打开应用。",
+
+	"facilities-title": "休闲、娱乐和旅行一体化应用",
+	"facilities-text": "想知道城市里发生了什么？我们收集了所有活动、场所和有趣的地方。",
+	"facilities-item-label-1": "活动日历",
+	"facilities-item-label-2": "餐厅 / 酒店",
+	"facilities-item-label-3": "活动日历",
+	"facilities-item-title-1": "随时查看最新活动",
+	"facilities-item-title-2": "寻找吃饭和休息的好地方",
+	"facilities-item-title-3": "规划你的出行路线",
+	"facilities-item-text-1": "了解所有事件：音乐会、展览、演出、节日",
+	"facilities-item-text-2": "发现新餐厅，预订酒店，查看评论与照片。",
+	"facilities-item-text-3": "制定方便的城市路线，找到值得一游的景点",
+
+	"events-title": "全面掌握城市活动和场所",
+	"events-text": "我们注重每一个细节：从简单搜索到快速购票。浏览日程、查看地图、选择地点。",
+	"events-header-title": "实时掌握城市动态",
+	"events-header-text": "查看活动日程，探索地点，规划行程并购票——一切尽在应用中。方便快捷，无缝体验。",
+	"events-item-title-1": "活动日程",
+	"events-item-title-2": "你附近的场所",
+	"events-item-text-1": "音乐会、展览、节日——第一时间了解城市动态。",
+	"events-item-text-2": "餐厅、咖啡馆、博物馆和地标——值得一去的地方。",
+
+	"book-title": "在应用内直接预订和购买",
+	"book-text": "浏览活动日程，发现有趣的地点，规划行程并购票——一切都在应用中完成。方便快捷，无需切换。",
+
+	"cta-title": "你的城市冒险从点击开始",
+	"cta-text": "下载应用，开始真正探索塔什干",
+
+	"address": "地址：",
+	"uzb-tash": "乌兹别克斯坦，塔什干",
+	"st-amir-temur": "阿米尔·帖木儿街",
+	"contacts": "联系方式：",
+	"dev-by": "开发者",
+	"all-rights": "版权所有。",
+
+	"footer-item-label-1": "首页",
+	"footer-item-label-2": "产品",
+	"footer-item-label-3": "功能"
 }

@@ -16,9 +16,7 @@
 		<meta name="title" content="{meta-title}" />
 		<meta name="description" content="{meta-description}" />
 		<meta name="theme-color" content="#ffffff" />
-		<meta
-			name="keywords"
-			content="travel app, events near me, concerts, exhibitions, restaurants, city guide, tours, attractions, GoGo app, explore city, things to do" />
+		<meta name="keywords" content="{meta-keywords}" />
 		<meta name="robots" content="index, follow" />
 		<meta name="publisher" content="Spacelabs, https://spacelabs.studio" />
 		<meta name="author" content="Spacelabs, https://spacelabs.studio" />
@@ -26,19 +24,15 @@
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://go-go.uz/" />
-		<meta property="og:title" content="{title}" />
-		<meta
-			property="og:description"
-			content="Открывайте концерты, выставки, туры и рестораны с тревел-приложением GoGo." />
+		<meta property="og:title" content="{meta-title}" />
+		<meta property="og:description" content="{meta-og-description}" />
 		<meta property="og:image" content="https://go-go.uz/facilities-3-1920.png" />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content="https://go-go.uz/" />
-		<meta property="twitter:title" content="{title}" />
-		<meta
-			property="twitter:description"
-			content="Открывайте концерты, выставки, туры и рестораны с тревел-приложением GoGo." />
+		<meta property="twitter:title" content="{meta-title}" />
+		<meta property="twitter:description" content="{meta-og-description}" />
 		<meta property="twitter:image" content="https://go-go.uz/facilities-3-1920.png" />
 
 		<!-- App Store Links (Optional) -->
@@ -63,14 +57,14 @@
 					</svg>
 				</button>
 				<nav class="header__nav">
-					<a href="#home" class="header__link">Главная </a>
-					<a href="#home" class="header__link">О проекте </a>
-					<a href="#home" class="header__link">Возможности </a>
-					<a href="#home" class="header__link">Контакты </a>
+					<a href="#home" class="header__link">{link-home}</a>
+					<a href="#home" class="header__link">{link-project}</a>
+					<a href="#home" class="header__link">{link-features}</a>
+					<a href="#home" class="header__link">{link-contacts}</a>
 				</nav>
 				<button class="button--blue header__button">
 					<div class="button__bg"></div>
-					<span>Скачать</span>
+					<span>{download}</span>
 					<svg class="icon-arrow" viewBox="0 0 24 24">
 						<use href="#icon-arrow"></use>
 					</svg>
@@ -115,22 +109,19 @@
 					</picture>
 
 					<div class="hero__content">
-						<h1 class="heading-1">Узбекистан у тебя в кармане</h1>
-						<p>
-							События, выставки, концерты, рестораны, туры, достопримечательности —
-							всё собрано в одном приложении
-						</p>
+						<h1 class="heading-1">{hero-title}</h1>
+						<p>{hero-text}</p>
 						<div class="hero__buttons">
 							<button class="button--outlined">
 								<div class="button__bg"></div>
-								<span>Узнать больше</span>
+								<span>{learn-more}</span>
 								<svg class="icon-arrow" viewBox="0 0 24 24">
 									<use href="#icon-arrow"></use>
 								</svg>
 							</button>
 							<button class="button--blue">
 								<div class="button__bg"></div>
-								<span>Скачать</span>
+								<span>{download}</span>
 								<svg class="icon-arrow" viewBox="0 0 24 24">
 									<use href="#icon-arrow"></use>
 								</svg>
@@ -140,11 +131,8 @@
 				</section>
 				<section class="essentials">
 					<div class="section-header">
-						<h2 class="heading-2">Всё в одном месте</h2>
-						<p>
-							Больше не нужно искать в десятках сайтов. В нашем приложении все ты
-							найдешь
-						</p>
+						<h2 class="heading-2">{essentials-title}</h2>
+						<p>{essentials-text}</p>
 					</div>
 					<ul class="essentials__list">
 						<li class="essentials__item">
@@ -154,10 +142,8 @@
 								</svg>
 							</div>
 							<div class="essentials__item-content">
-								<h4 class="heading-4">Город, который живёт</h4>
-								<p class="body-14">
-									Будь в центре городской жизни от масштабных концертов
-								</p>
+								<h4 class="heading-4">{essentials-item-title-1}</h4>
+								<p class="body-14">{essentials-item-text-1}</p>
 							</div>
 						</li>
 						<li class="essentials__item">
@@ -167,10 +153,8 @@
 								</svg>
 							</div>
 							<div class="essentials__item-content">
-								<h4 class="heading-4">Твой карманный ассистент</h4>
-								<p class="body-14">
-									Планируй, бронируй и открывай город без лишних усилий
-								</p>
+								<h4 class="heading-4">{essentials-item-title-2}</h4>
+								<p class="body-14">{essentials-item-text-2}</p>
 							</div>
 						</li>
 						<li class="essentials__item">
@@ -180,23 +164,16 @@
 								</svg>
 							</div>
 							<div class="essentials__item-content">
-								<h4 class="heading-4">Удобно и быстро</h4>
-								<p class="body-14">
-									Не трать время на поиск — просто открой приложение.
-								</p>
+								<h4 class="heading-4">{essentials-item-title-3}</h4>
+								<p class="body-14">{essentials-item-text-3}</p>
 							</div>
 						</li>
 					</ul>
 				</section>
 				<section class="facilities">
 					<div class="section-header">
-						<h2 class="heading-2">
-							Единое приложение для досуга, отдыха и путешествий
-						</h2>
-						<p>
-							Хочешь знать, что происходит в городе? Мы собрали все события, заведения
-							и интересные места
-						</p>
+						<h2 class="heading-2">{facilities-title}</h2>
+						<p>{facilities-text}</p>
 					</div>
 					<ul class="facilities__list">
 						<li class="facilities__item">
@@ -232,12 +209,11 @@
 									alt="1st banner" />
 							</picture>
 							<div class="facilities__item-content">
-								<span class="facilities__item-label"> Календарь событий </span>
-								<h3 class="heading-3">Смотри, что происходит онлайн</h3>
-								<p>
-									Будь в курсе всех событий: концерты, выставки, спектакли,
-									фестивали
-								</p>
+								<span class="facilities__item-label">
+									{facilities-item-label-1}
+								</span>
+								<h3 class="heading-3">{facilities-item-title-1}</h3>
+								<p>{facilities-item-text-1}</p>
 							</div>
 						</li>
 						<li class="facilities__item">
@@ -273,12 +249,11 @@
 									alt="1st banner" />
 							</picture>
 							<div class="facilities__item-content">
-								<span class="facilities__item-label"> Ресторан / Отель </span>
-								<h3 class="heading-3">Ищи, где поесть и отдохнуть прямо сейчас</h3>
-								<p>
-									Открывай новые рестораны, бронируй отели, читай отзывы и смотри
-									фото.
-								</p>
+								<span class="facilities__item-label">
+									{facilities-item-label-2}
+								</span>
+								<h3 class="heading-3">{facilities-item-title-2}</h3>
+								<p>{facilities-item-text-3}</p>
 							</div>
 						</li>
 						<li class="facilities__item">
@@ -314,24 +289,19 @@
 									alt="1st banner" />
 							</picture>
 							<div class="facilities__item-content">
-								<span class="facilities__item-label"> Календарь событий </span>
-								<h3 class="heading-3">Планируй свой маршрут вместе с нами</h3>
-								<p>
-									Проложи удобный маршрут по городу, найди достопримечательности
-								</p>
+								<span class="facilities__item-label">
+									{facilities-item-label-3}
+								</span>
+								<h3 class="heading-3">{facilities-item-title-3}</h3>
+								<p>{facilities-item-text-3}</p>
 							</div>
 						</li>
 					</ul>
 				</section>
 				<section class="events">
 					<div class="section-header">
-						<h2 class="heading-2 clr-primary-950">
-							Полный доступ к городским событиям и местам
-						</h2>
-						<p>
-							Мы продумали всё до мелочей: от простого поиска до быстрой покупки
-							билетов. Листай афишу, открывай карту, выбирай места
-						</p>
+						<h2 class="heading-2 clr-primary-950">{events-title}</h2>
+						<p>{events-text}</p>
 					</div>
 					<div class="events__container">
 						<div class="mockup-container">
@@ -431,12 +401,8 @@
 						</div>
 						<div class="events__content">
 							<div class="events__content-header section-header">
-								<h3 class="heading-3">Следи за городом в реальном времени</h3>
-								<p>
-									Смотри афишу событий, ищи интересные места, планируй день и
-									покупай билеты — всё прямо в приложении. Удобно, быстро и без
-									лишних переходов.
-								</p>
+								<h3 class="heading-3">{events-header-title}</h3>
+								<p>{events-header-text}</p>
 							</div>
 							<ul class="events__list">
 								<li class="events__item">
@@ -445,11 +411,8 @@
 											<use href="#icon-code"></use>
 										</svg>
 									</div>
-									<h5 class="heading-5">Актуальная афиша</h5>
-									<p class="body-14">
-										Концерты, выставки, фестивали — узнавай первым, что
-										происходит в городе.
-									</p>
+									<h5 class="heading-5">{events-item-title-1}</h5>
+									<p class="body-14">{events-item-text-1}</p>
 								</li>
 								<li class="events__item">
 									<div class="events__item-box icon-container">
@@ -457,11 +420,8 @@
 											<use href="#icon-code"></use>
 										</svg>
 									</div>
-									<h5 class="heading-5">Места рядом с тобой</h5>
-									<p class="body-14">
-										Рестораны, кофейни, музеи и достопримечательности — всё, что
-										стоит посетить.
-									</p>
+									<h5 class="heading-5">{events-item-title-2}</h5>
+									<p class="body-14">{events-item-text-2}</p>
 								</li>
 							</ul>
 						</div>
@@ -469,11 +429,8 @@
 				</section>
 				<section class="book">
 					<div class="book__content">
-						<h3 class="heading-3">Бронируй и покупай прямо в приложении</h3>
-						<p>
-							Смотри афишу событий, ищи интересные места, планируй день и покупай
-							билеты — всё прямо в приложении. Удобно, быстро и без лишних переходов.
-						</p>
+						<h3 class="heading-3">{book-title}</h3>
+						<p>{book-text}</p>
 					</div>
 					<div class="mockup-container">
 						<picture class="mockup-image">
@@ -882,13 +839,11 @@
 						</picture>
 					</div>
 					<div class="cta__right">
-						<h2 class="heading-2 clr-primary-950">
-							Твое приключение в городе начинается с одного клика
-						</h2>
-						<p>Скачай приложение и начни открывать Ташкент по-настоящему</p>
+						<h2 class="heading-2 clr-primary-950">{cta-title}</h2>
+						<p>{cta-text}</p>
 						<button class="button--blue">
 							<div class="button__bg"></div>
-							<span>Скачать</span>
+							<span>{download}</span>
 							<svg class="icon-arrow" viewBox="0 0 24 24">
 								<use href="#icon-arrow"></use>
 							</svg>
@@ -907,12 +862,12 @@
 						</svg>
 						<div class="footer__left-wrapper">
 							<div class="footer__left-container">
-								<span class="footer__label"> Адрес: </span>
-								<span class="footer__label"> Узбекистан, Ташкент </span>
-								<p>ул Амира Темура</p>
+								<span class="footer__label">{address}</span>
+								<span class="footer__label"> {uzb-tash} </span>
+								<p>{st-amir-temur}</p>
 							</div>
 							<div class="footer__left-container">
-								<span class="footer__label"> Контакты: </span>
+								<span class="footer__label"> {contacts} </span>
 								<a href="tel:+998 90 009 00 09"> +998 90 009 00 09 </a>
 								<a href="mailto:hello@go-go.uz">hello@go-go.uz</a>
 							</div>
@@ -920,36 +875,36 @@
 					</div>
 					<div class="footer__right">
 						<nav class="footer__nav">
-							<span class="footer__label">Главное</span>
-							<a href="#"> Главная </a>
-							<a href="#"> О нас </a>
-							<a href="#"> Новости </a>
-							<a href="#"> Контакты </a>
+							<span class="footer__label">{footer-item-label-1}</span>
+							<a href="#"> {link-home} </a>
+							<a href="#"> {link-about} </a>
+							<a href="#"> {link-news} </a>
+							<a href="#"> {link-contacts} </a>
 						</nav>
 						<nav class="footer__nav">
-							<span class="footer__label">Продукты</span>
-							<a href="#"> Гостиницы </a>
-							<a href="#"> Рестораны </a>
-							<a href="#"> Событие </a>
-							<a href="#"> Концерты </a>
+							<span class="footer__label">{footer-item-label-2}</span>
+							<a href="#"> {link-hotels} </a>
+							<a href="#"> {link-restaurants} </a>
+							<a href="#"> {link-events} </a>
+							<a href="#"> {link-concerts} </a>
 						</nav>
 						<nav class="footer__nav">
-							<span class="footer__label">Возможности</span>
-							<a href="#"> Помощь </a>
-							<a href="#"> Инструкция </a>
+							<span class="footer__label">{footer-item-label-3}</span>
+							<a href="#"> {link-help} </a>
+							<a href="#"> {link-instructions} </a>
 						</nav>
 					</div>
 				</div>
 				<div class="footer__bottom">
 					<p class="footer__copyright">
-						© <span data-copyright>{year}</span> Разработано
+						© <span data-copyright>{year}</span> {dev-by}
 						<a
 							href="https://spacelabs.studio"
 							target="_blank"
 							rel="noopener noreferrer">
 							Spacelabs
 						</a>
-						. Все права защищены.
+						. {all-rights}
 					</p>
 					<div class="footer__social">
 						<a href="https://facebook.com">

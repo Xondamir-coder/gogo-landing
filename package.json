@@ -6,7 +6,7 @@
 	"scripts": {
 		"localize": "node src/js/localize.js",
 		"resize": "node src/js/process-images.js",
-		"dev": "npm run localize && vite",
+		"dev": "npm run localize && vite --host",
 		"build": "npm run localize && vite build",
 		"preview": "vite preview"
 	},

@@ -156,10 +156,12 @@
 	}
 }
 .mockup-container {
+	pointer-events: none;
 	position: relative;
 	border-radius: max(2.5rem, 20px);
 	width: 100%;
 	background-color: #fbfbfb;
+	aspect-ratio: 436/400;
 	@media screen and (max-width: vars.$bp-large-mobile) {
 		aspect-ratio: 343/314;
 	}

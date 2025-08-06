@@ -1,4 +1,72 @@
 {
-	"meta-title": "Discover events, tours and attractions | GoGo App",
-	"meta-description": "All events and places in one travel app. Download for free!"
+	"meta-title": "Discover Events, Tours, and Attractions | GoGo App",
+	"meta-description": "All events and places in one travel app — GoGo. Download for free!",
+	"meta-keywords": "travel app, events near me, concerts, exhibitions, restaurants, city guide, tours, attractions, GoGo app, explore city, things to do",
+	"meta-og-description": "Discover concerts, exhibitions, tours, and restaurants with the GoGo travel app.",
+
+	"link-home": "Home",
+	"link-project": "About Project",
+	"link-about": "About Us",
+	"link-features": "Features",
+	"link-contacts": "Contacts",
+	"link-news": "News",
+	"link-hotels": "Hotels",
+	"link-restaurants": "Restaurants",
+	"link-events": "Events",
+	"link-concerts": "Concerts",
+	"link-help": "Help",
+	"link-instructions": "Instructions",
+
+	"download": "Download",
+	"learn-more": "Learn More",
+
+	"hero-title": "Uzbekistan in your pocket",
+	"hero-text": "Events, exhibitions, concerts, restaurants, tours, attractions — all in one app",
+
+	"essentials-title": "Everything in One Place",
+	"essentials-text": "No more searching dozens of websites. Everything is in our app.",
+	"essentials-item-title-1": "A City That Lives",
+	"essentials-item-title-2": "Your Pocket Assistant",
+	"essentials-item-title-3": "Fast and Convenient",
+	"essentials-item-text-1": "Stay in the heart of city life from large-scale concerts",
+	"essentials-item-text-2": "Plan, book, and explore the city with ease",
+	"essentials-item-text-3": "Don’t waste time searching — just open the app.",
+
+	"facilities-title": "One App for Leisure, Entertainment, and Travel",
+	"facilities-text": "Want to know what’s happening in the city? We’ve gathered all the events, venues, and points of interest.",
+	"facilities-item-label-1": "Event Calendar",
+	"facilities-item-label-2": "Restaurant / Hotel",
+	"facilities-item-label-3": "Event Calendar",
+	"facilities-item-title-1": "See what's happening online",
+	"facilities-item-title-2": "Find where to eat and relax right now",
+	"facilities-item-title-3": "Plan your route with us",
+	"facilities-item-text-1": "Keep up with all events: concerts, exhibitions, performances, festivals",
+	"facilities-item-text-2": "Discover new restaurants, book hotels, read reviews, and view photos.",
+	"facilities-item-text-3": "Map out a convenient route, find attractions",
+
+	"events-title": "Full Access to City Events and Places",
+	"events-text": "We thought through every detail: from simple search to fast ticket purchases. Browse the schedule, open the map, pick locations.",
+	"events-header-title": "Track the City in Real Time",
+	"events-header-text": "See event schedules, explore places, plan your day and buy tickets — all in one app. Easy, fast, and seamless.",
+	"events-item-title-1": "Event Schedule",
+	"events-item-title-2": "Places Near You",
+	"events-item-text-1": "Concerts, exhibitions, festivals — be the first to know what’s happening in the city.",
+	"events-item-text-2": "Restaurants, cafes, museums, and landmarks — all worth visiting.",
+
+	"book-title": "Book and Buy Directly in the App",
+	"book-text": "Browse event schedules, find interesting places, plan your day, and buy tickets — all within the app. Easy, fast, and seamless.",
+
+	"cta-title": "Your City Adventure Starts with One Click",
+	"cta-text": "Download the app and start truly exploring Tashkent",
+
+	"address": "Address:",
+	"uzb-tash": "Uzbekistan, Tashkent",
+	"st-amir-temur": "Amir Temur Street",
+	"contacts": "Contacts:",
+	"dev-by": "Developed by",
+	"all-rights": "All rights reserved.",
+
+	"footer-item-label-1": "Main",
+	"footer-item-label-2": "Products",
+	"footer-item-label-3": "Features"
 }
