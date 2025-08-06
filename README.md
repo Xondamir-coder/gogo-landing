@@ -11,7 +11,6 @@ A fast, localized landing page for the **GoGo Travel App** — promoting events,
 -   ✅ SEO-optimized metadata per locale
 -   ✅ Open Graph & Apple Touch icons
 -   ✅ Responsive layout
--   ✅ Scrollable sections with min-item widths
 -   ✅ Dev-friendly structure, production-optimized output
 
 ---
@@ -28,7 +27,7 @@ A fast, localized landing page for the **GoGo Travel App** — promoting events,
 
 ---
 
-## 📜 Scripts
+## 📜 Custom Scripts
 
 ### 1. 🔁 Localized HTML Generation
 
@@ -42,4 +41,11 @@ Generates localized `index.html, ru/index.html, zh/index.html` for each supporte
 Generates resized (1920/1024/512), converted (AVIF/WEBP), compressed images in `src/images/resized` for each image in `src/images/originals`
 
 **Script:** `src/js/process-images.js`  
-**Run:** `npm run resize`
+**Run:** `npm run process-images`
+
+### 3. 🔁 Inlining CSS
+
+After building the project with Vite, this script will inline the compiled CSS into your final HTML files. It replaces the external `<link rel="stylesheet">` tag with a `<style>` block, improving load performance and reducing external file dependencies.
+
+**Script:** `src/js/inline-css.js`  
+**Run:** `npm run inline-css`
