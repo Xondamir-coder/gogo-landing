@@ -73,6 +73,7 @@
 			<main class="container">
 				<section class="hero">
 					<picture class="hero__image">
+						<!-- AVIF sources -->
 						<source
 							srcset="/src/images/resized/hero-1920.avif"
 							type="image/avif"
@@ -80,13 +81,13 @@
 						<source
 							srcset="/src/images/resized/hero-1024.avif"
 							type="image/avif"
-							media="(min-width: 513px)" />
+							media="(min-width: 513px) and (max-width: 1024px)" />
 						<source
-							srcset="/src/images/resized/hero-512.avif"
+							srcset="/src/images/hero-mobile.avif"
 							type="image/avif"
 							media="(max-width: 512px)" />
 
-						<!-- Optional WebP sources -->
+						<!-- WebP sources -->
 						<source
 							srcset="/src/images/resized/hero-1920.webp"
 							type="image/webp"
@@ -94,18 +95,17 @@
 						<source
 							srcset="/src/images/resized/hero-1024.webp"
 							type="image/webp"
-							media="(min-width: 513px)" />
-						<source
-							srcset="/src/images/resized/hero-512.webp"
-							type="image/webp"
-							media="(max-width: 512px)" />
+							media="(min-width: 513px) and (max-width: 1024px)" />
 
-						<!-- Fallback JPG (only 1920) -->
 						<img
+							srcset="
+								/src/images/hero-mobile.jpg        512w,
+								/src/images/resized/hero-1920.jpg 1920w
+							"
+							sizes="(max-width: 512px) 512px, 1920px"
 							src="/src/images/resized/hero-1920.jpg"
-							alt="Hero banner"
-							fetchpriority="high"
-							width="1920" />
+							alt="Hero image"
+							fetchpriority="high" />
 					</picture>
 
 					<div class="hero__content">
@@ -907,27 +907,27 @@
 						. {all-rights}
 					</p>
 					<div class="footer__social">
-						<a href="https://facebook.com">
+						<a href="https://facebook.com" aria-label="{facebook}">
 							<svg viewBox="0 0 20 20" class="footer__social-link">
 								<use href="#icon-facebook"></use>
 							</svg>
 						</a>
-						<a href="https://instagram.com">
+						<a href="https://instagram.com" aria-label="{instagram}">
 							<svg viewBox="0 0 20 20" class="footer__social-link">
 								<use href="#icon-instagram"></use>
 							</svg>
 						</a>
-						<a href="https://twitter.com">
+						<a href="https://twitter.com" aria-label="{twitter}">
 							<svg viewBox="0 0 20 20" class="footer__social-link">
 								<use href="#icon-x"></use>
 							</svg>
 						</a>
-						<a href="https://linkedin.com">
+						<a href="https://linkedin.com" aria-label="{linkedin}">
 							<svg viewBox="0 0 20 20" class="footer__social-link">
 								<use href="#icon-linkedin"></use>
 							</svg>
 						</a>
-						<a href="https://youtube.com">
+						<a href="https://youtube.com" aria-label="{youtube}">
 							<svg viewBox="0 0 20 20" class="footer__social-link">
 								<use href="#icon-youtube"></use>
 							</svg>
