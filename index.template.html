@@ -58,9 +58,9 @@
 				</button>
 				<nav class="header__nav">
 					<a href="#home" class="header__link">{link-home}</a>
-					<a href="#home" class="header__link">{link-project}</a>
-					<a href="#home" class="header__link">{link-features}</a>
-					<a href="#home" class="header__link">{link-contacts}</a>
+					<a href="#about-project" class="header__link">{link-project}</a>
+					<a href="#features" class="header__link">{link-features}</a>
+					<a href="#contacts" class="header__link">{link-contacts}</a>
 				</nav>
 				<button class="button--blue header__button">
 					<div class="button__bg"></div>
@@ -71,7 +71,7 @@
 				</button>
 			</header>
 			<main class="container">
-				<section class="hero">
+				<section class="hero" id="home">
 					<picture class="hero__image">
 						<!-- AVIF sources -->
 						<source
@@ -129,7 +129,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="essentials">
+				<section class="essentials" id="about-project">
 					<div class="section-header">
 						<h2 class="heading-2">{essentials-title}</h2>
 						<p>{essentials-text}</p>
@@ -170,7 +170,7 @@
 						</li>
 					</ul>
 				</section>
-				<section class="facilities">
+				<section class="facilities" id="features">
 					<div class="section-header">
 						<h2 class="heading-2">{facilities-title}</h2>
 						<p>{facilities-text}</p>
@@ -851,7 +851,7 @@
 					</div>
 				</section>
 			</main>
-			<footer class="footer">
+			<footer class="footer" id="contacts">
 				<svg viewBox="0 0 567 371" class="footer__vector">
 					<use href="#icon-footer-vector"></use>
 				</svg>

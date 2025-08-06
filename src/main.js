@@ -1,8 +1,13 @@
 import './scss/main.scss';
 import gsap from 'gsap';
 import { gsapAnimate } from './js/gsap';
+import Lenis from 'lenis';
 
+// Inject SVG icons as symbols
 import.meta.glob('./icons/*.svg', { eager: true });
+
+// Initialize Lenis
+const lenis = new Lenis({ autoRaf: true });
 
 /**
  * GSAP animations
@@ -124,5 +129,18 @@ const setCopyrightYear = () => {
 		}
 	});
 };
+const handlePageNavigation = () => {
+	document.addEventListener('click', e => {
+		const { target } = e;
+		if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
+			e.preventDefault();
 
+			const targetID = target.getAttribute('href');
+			const targetSection = targetID === '#' ? '#home' : targetID;
+			lenis.scrollTo(targetSection);
+		}
+	});
+};
+
+handlePageNavigation();
 setCopyrightYear();
