@@ -68,5 +68,19 @@
 
 	"footer-item-label-1": "Main",
 	"footer-item-label-2": "Products",
-	"footer-item-label-3": "Features"
+	"footer-item-label-3": "Features",
+
+	"youtube": "YouTube",
+	"instagram": "Instagram",
+	"facebook": "Facebook",
+	"telegram": "Telegram",
+	"twitter": "Twitter",
+	"linkedin": "LinkedIn",
+
+	"locale-en": "Eng",
+	"locale-ru": "Rus",
+	"locale-zh": "Chi",
+	"locale-en-text": "English",
+	"locale-ru-text": "Russian",
+	"locale-zh-text": "Chinese"
 }

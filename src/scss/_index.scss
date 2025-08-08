@@ -3,12 +3,15 @@
 
 #app {
 	padding-bottom: max(4rem, 20px);
-	overflow: hidden;
 }
 .container {
 	display: flex;
 	flex-direction: column;
 	gap: 6rem;
+	overflow: hidden;
+	@media screen and (max-width: 800px) {
+		padding-top: 80px;
+	}
 }
 .hero {
 	aspect-ratio: 1440/1239;

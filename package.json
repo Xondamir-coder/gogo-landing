@@ -8,7 +8,7 @@
 		"process-images": "node src/js/process-images.js",
 		"inline-css": "node src/js/inline-css.js",
 		"dev": "npm run localize && vite --host",
-		"build": "npm run localize && vite build && npm run inline-css",
+		"build": "vite build && npm run inline-css",
 		"preview": "vite preview"
 	},
 	"devDependencies": {

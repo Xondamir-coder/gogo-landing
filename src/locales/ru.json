@@ -75,5 +75,12 @@
 	"facebook": "Facebook",
 	"telegram": "Telegram",
 	"twitter": "Twitter",
-	"linkedin": "LinkedIn"
+	"linkedin": "LinkedIn",
+
+	"locale-en": "Англ",
+	"locale-ru": "Рус",
+	"locale-zh": "Кит",
+	"locale-en-text": "Английский",
+	"locale-ru-text": "Русский",
+	"locale-zh-text": "Китайский"
 }

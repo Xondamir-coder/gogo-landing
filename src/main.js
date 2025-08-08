@@ -130,6 +130,10 @@ const setCopyrightYear = () => {
 	});
 };
 const handlePageNavigation = () => {
+	const headerEl = document.querySelector('.header');
+	const headerHeight = headerEl.offsetHeight;
+	const menuCheckboxEl = document.querySelector('.menu__checkbox');
+
 	document.addEventListener('click', e => {
 		const { target } = e;
 		if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
@@ -137,10 +141,40 @@ const handlePageNavigation = () => {
 
 			const targetID = target.getAttribute('href');
 			const targetSection = targetID === '#' ? '#home' : targetID;
-			lenis.scrollTo(targetSection);
+			lenis.scrollTo(targetSection, {
+				offset: -headerHeight
+			});
+
+			menuCheckboxEl.checked = false; // Close menu after navigation
 		}
+	});
+};
+const handleDocumentChange = () => {
+	const dropdownEls = document.querySelectorAll('.header__dropdown');
+
+	dropdownEls.forEach(dropdown => {
+		dropdown.addEventListener('click', e => {
+			const { target } = e;
+			const el = target.closest('[data-locale]');
+			console.log(el);
+			if (!el) return;
+			const locale = el.getAttribute('data-locale');
+			window.location.replace(`/${locale}/index.html`);
+		});
+	});
+};
+const handleOutsideClickDropdown = () => {
+	const langToggleEls = document.querySelectorAll('.header__lang-checkbox');
+	const menuToggleEl = document.querySelector('.menu__checkbox');
+
+	document.addEventListener('click', e => {
+		const { target } = e;
+		if (!target.closest('.header__lang')) langToggleEls.forEach(el => (el.checked = false));
+		if (!target.closest('.header-menu-container')) menuToggleEl.checked = false;
 	});
 };
 
 handlePageNavigation();
 setCopyrightYear();
+handleDocumentChange();
+handleOutsideClickDropdown();

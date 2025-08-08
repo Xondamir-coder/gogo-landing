@@ -68,5 +68,19 @@
 
 	"footer-item-label-1": "首页",
 	"footer-item-label-2": "产品",
-	"footer-item-label-3": "功能"
+	"footer-item-label-3": "功能",
+
+	"youtube": "YouTube",
+	"instagram": "Instagram",
+	"facebook": "Facebook",
+	"telegram": "Telegram",
+	"twitter": "Twitter",
+	"linkedin": "LinkedIn",
+
+	"locale-en": "英",
+	"locale-ru": "俄",
+	"locale-zh": "中",
+	"locale-en-text": "英语",
+	"locale-ru-text": "俄语",
+	"locale-zh-text": "中文"
 }

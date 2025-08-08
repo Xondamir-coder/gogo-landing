@@ -47,29 +47,117 @@
 	</head>
 	<body>
 		<div id="app">
-			<header class="header">
-				<button
-					class="header__logo"
-					onclick="location.reload(); return false;"
-					aria-label="Reload page">
-					<svg viewBox="0 0 148 44">
-						<use href="#icon-logo"></use>
-					</svg>
-				</button>
-				<nav class="header__nav">
-					<a href="#home" class="header__link">{link-home}</a>
-					<a href="#about-project" class="header__link">{link-project}</a>
-					<a href="#features" class="header__link">{link-features}</a>
-					<a href="#contacts" class="header__link">{link-contacts}</a>
-				</nav>
-				<button class="button--blue header__button">
-					<div class="button__bg"></div>
-					<span>{download}</span>
-					<svg class="icon-arrow" viewBox="0 0 24 24">
-						<use href="#icon-arrow"></use>
-					</svg>
-				</button>
-			</header>
+			<div class="header-menu-container">
+				<input type="checkbox" id="menu-toggle" class="menu__checkbox" />
+				<header class="header">
+					<button
+						class="header__logo"
+						onclick="location.reload(); return false;"
+						aria-label="Reload page">
+						<svg viewBox="0 0 148 44">
+							<use href="#icon-logo"></use>
+						</svg>
+					</button>
+					<nav class="header__nav">
+						<a href="#home" class="header__link">{link-home}</a>
+						<a href="#about-project" class="header__link">{link-project}</a>
+						<a href="#features" class="header__link">{link-features}</a>
+						<a href="#contacts" class="header__link">{link-contacts}</a>
+					</nav>
+					<label for="menu-toggle" class="header__ham">
+						<svg viewBox="0 0 24 24" class="header__ham-icon">
+							<use href="#icon-hamburger"></use>
+						</svg>
+						<svg viewBox="0 0 24 24" class="header__ham-icon">
+							<use href="#icon-close-x"></use>
+						</svg>
+					</label>
+					<div class="header__right">
+						<div class="header__lang">
+							<input
+								type="checkbox"
+								id="lang-dropdown-toggle"
+								class="header__lang-checkbox" />
+							<label for="lang-dropdown-toggle" class="header__locale">
+								<svg viewBox="0 0 24 24" class="header__locale-flag">
+									<use href="#icon-flag-en"></use>
+								</svg>
+								<span class="header__lang-text">Eng</span>
+								<svg viewBox="0 0 18 18" class="header__locale-arrow">
+									<use href="#icon-chevron-down"></use>
+								</svg>
+							</label>
+							<div class="header__dropdown">
+								<button class="header__dropdown-item" data-locale="zh">
+									<svg viewBox="0 0 24 24" class="header__dropdown-flag">
+										<use href="#icon-flag-zh"></use>
+									</svg>
+									<span class="header__lang-text">中文</span>
+								</button>
+								<button class="header__dropdown-item" data-locale="ru">
+									<svg viewBox="0 0 24 24" class="header__dropdown-flag">
+										<use href="#icon-flag-ru"></use>
+									</svg>
+									<span class="header__lang-text">Русский</span>
+								</button>
+							</div>
+						</div>
+						<button class="button--blue header__button">
+							<div class="button__bg"></div>
+							<span>{download}</span>
+							<svg class="icon-arrow" viewBox="0 0 24 24">
+								<use href="#icon-arrow"></use>
+							</svg>
+						</button>
+					</div>
+				</header>
+				<div class="menu">
+					<nav class="header__nav">
+						<a href="#home" class="header__link">{link-home}</a>
+						<a href="#about-project" class="header__link">{link-project}</a>
+						<a href="#features" class="header__link">{link-features}</a>
+						<a href="#contacts" class="header__link">{link-contacts}</a>
+					</nav>
+					<div class="menu__bottom">
+						<div class="header__lang">
+							<input
+								type="checkbox"
+								id="mobile-lang-dropdown-toggle"
+								class="header__lang-checkbox" />
+							<label for="mobile-lang-dropdown-toggle" class="header__locale">
+								<svg viewBox="0 0 24 24" class="header__locale-flag">
+									<use href="#icon-flag-en"></use>
+								</svg>
+								<span class="header__lang-text">Eng</span>
+								<svg viewBox="0 0 18 18" class="header__locale-arrow">
+									<use href="#icon-chevron-down"></use>
+								</svg>
+							</label>
+							<div class="header__dropdown">
+								<button class="header__dropdown-item" data-locale="zh">
+									<svg viewBox="0 0 24 24" class="header__dropdown-flag">
+										<use href="#icon-flag-zh"></use>
+									</svg>
+									<span class="header__lang-text">中文</span>
+								</button>
+								<button class="header__dropdown-item" data-locale="ru">
+									<svg viewBox="0 0 24 24" class="header__dropdown-flag">
+										<use href="#icon-flag-ru"></use>
+									</svg>
+									<span class="header__lang-text">Русский</span>
+								</button>
+							</div>
+						</div>
+						<button class="button--blue menu__bottom-button">
+							<div class="button__bg"></div>
+							<span>{download}</span>
+							<svg class="icon-arrow" viewBox="0 0 24 24">
+								<use href="#icon-arrow"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
 			<main class="container">
 				<section class="hero" id="home">
 					<picture class="hero__image">
